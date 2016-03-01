@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Архипов](https://up.htmlacademy.ru/adaptive/6/user/131001).
-* Наставник: `Неизвестно`.
+* Наставник: `Олег Зубов`.
 
 ---
 
