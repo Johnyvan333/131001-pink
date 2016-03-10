@@ -5,11 +5,11 @@
   <title>pink</title>
 </head>
 <body>
-  <header class="formpage-header">
+  <header class="page-header">
     <div class="top-panel">
       <a href="index.html" class="top-panel__logo">pink</a>
-      <button class="main-menu-toogle">
-        <span class="main-menu-toogle__icon">toogle menu</span>
+      <button class="top-panel__toogle">
+        <span class="top-panel__toogle-icon">toogle menu</span>
       </button>
       <nav class="main-menu main-menu--hidden">
         <a class="main-menu__item "href="index.html">главная</a>
@@ -18,69 +18,71 @@
         <a class="main-menu__item "href="#">html academy</a>
       </nav>
     </div>
-    <p>Конкурс на самое безбашенное путешествие с Пинк</p>
+    <p class="page-header__promo">Конкурс на самое безбашенное путешествие с Пинк</p>
   </header>
-  <section class="user-name-block">
-    <p class="user-name-block__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-    <form class="user-name-form" action="#" method="post">
-      <label class="user-name-form__title" for="user-name">имя:</label>
-      <input class="user-name-form__input" id="user-name" type="text" placeholder="Введите ваше имя">
-      <label class="user-name-form__title" for="user-surname">фамилия:</label>
-      <input class="user-name-form__input" id="user-surname" type="text" placeholder="Укажите фамилию">
-      <label class="user-name-form__title" for="user-patronymic">отчество:</label>
-      <input class="user-name-form__input" id="user-patromymic" type="text" placeholder="Ну и отчество тоже">
+  <main class="page-main">
+    <form action="#" class="user-form" method="post">
+      <section class="user-form__name-block">
+        <p class="user-form__name-promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <div class="user-form__name-wrapper">
+          <label class="user-form__name-title" for="user-name">имя:</label>
+          <input class="user-form__name-input" id="user-name" type="text" placeholder="Введите ваше имя">
+          <label class="user-form__name-title" for="user-surname">фамилия:</label>
+          <input class="user-form__name-input" id="user-surname" type="text" placeholder="Укажите фамилию">
+          <label class="user-form__name-title" for="user-patronymic">отчество:</label>
+          <input class="user-form__name-input" id="user-patromymic" type="text" placeholder="Ну и отчество тоже">
+        </div>
+      </section>
+      <section class="user-form__achievments-block">
+        <p class="user-form__achievments-promo">ваши безбашенные достижения в путешествии</p>
+        <div class="user-form__achievments-wrapper">
+          <input type="checkbox" class="user-form__achievments-input" id="achievment1">
+          <label for="achievment1" class="user-form__achievments-title">Сделал селфи с акулой</label>
+          <input type="checkbox" class="user-form__achievments-input" id="achievment2">
+          <label for="achievment2" class="user-form__achievments-title">обгорел на пляже</label>
+          <input type="checkbox" class="user-form__achievments-input" id="achievment3">
+          <label for="achievment3" class="user-form__achievments-title">Видел Чака Норриса</label>
+          <input type="checkbox" class="user-form__achievments-input" id="achievment4">
+          <label for="achievment4" class="user-form__achievments-title">Накупил сувениров</label>
+          <input type="checkbox" class="user-form__achievments-input" id="achievment5">
+          <label for="achievment5" class="user-form__achievments-title">Удержал башню</label>
+          <input type="checkbox" class="user-form__achievments-input" id="achievment6">
+          <label for="achievment6" class="user-form__achievments-title">Разгромил отель</label>
+        </div>
+      </section>
+      <section class="user-form__contacts-block">
+        <label class="user-form__contacts-title" for="user-phone">номерок телефончика</label>
+        <input class="user-form__contacts-input" id="user-phone" type="tel" placeholder="Номерок, пожалуйста">
+        <label class="user-form__contacts-title" for="user-email">адресок почты</label>
+        <input class="user-form__contacts-input" id="user-email" type="email" placeholder="E-mail, пожалуйста">
+      </section>
+      <section class="user-form__application-block">
+        <p class="user-form__application-promo">с каким приложением путешествовали</p>
+        <div class="user-form__application-wrapper">
+          <input type="radio" class="user-form__application-input" id="application1">
+          <label for="application1" class="user-form__application-title">Pink для iOS</label>
+          <input type="radio" class="user-form__application-nput" id="application2">
+          <label for="application2" class="user-form__application-title">Pink для Android</label>
+          <input type="radio" class="user-form__application-input" id="application3">
+          <label for="application3" class="user-form__application-title">Windows Phone</label>
+        </div>
+      </section>
+      <section class="user-form__review-block">
+        <p class="user-form__review-promo">опишите свои эмоции</p>
+        <textarea class="user-form__review-textarea" name="user-review" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </section>
+      <button type="submit" class="user-form__submit">отправить форму</button>
+      <div class="user-form__warning"><span>*</span>&mdash;обязательные поля</div>
     </form>
-  </section>
-  <section class="user-achievments-block">
-    <p class="user-achievments-block__promo">ваши безбашенные достижения в путешествии</p>
-    <form class="user-achievments-form" action="#" method="post">
-      <input type="checkbox" class="user-achievments-form__input" id="achievment1">
-      <label for="achievment1" class="user-achievments-form__title">Сделал селфи с акулой</label>
-      <input type="checkbox" class="user-achievments-form__input" id="achievment2">
-      <label for="achievment2" class="user-achievments-form__title">обгорел на пляже</label>
-      <input type="checkbox" class="user-achievments-form__input" id="achievment3">
-      <label for="achievment3" class="user-achievments-form__title">Видел Чака Норриса</label>
-      <input type="checkbox" class="user-achievments-form__input" id="achievment4">
-      <label for="achievment4" class="user-achievments-form__title">Накупил сувениров</label>
-      <input type="checkbox" class="user-achievments-form__input" id="achievment5">
-      <label for="achievment5" class="user-achievments-form__title">Удержал башню</label>
-      <input type="checkbox" class="user-achievments-form__input" id="achievment6">
-      <label for="achievment6" class="user-achievments-form__title">Разгромил отель</label>
-    </form>
-  </section>
-  <section class="user-contacts-block">
-    <form class="user-contacts-form" action="#" method="post">
-      <label class="user-contacts-form__title" for="user-phone">номерок телефончика</label>
-      <input class="user-contacts-form__input" id="user-phone" type="tel" placeholder="Номерок, пожалуйста">
-      <label class="user-contacts-form__title" for="user-email">адресок почты</label>
-      <input class="user-contacts-form__input" id="user-email" type="email" placeholder="E-mail, пожалуйста">
-    </form>
-  </section>
-  <section class="user-application-block">
-    <p class="user-application-block__promo">с каким приложением путешествовали</p>
-    <form class="user-application-form" action="#" method="post">
-      <input type="radio" class="user-application-form__input" id="application1">
-      <label for="application1" class="user-application-form__title">Pink для iOS</label>
-      <input type="radio" class="user-application-form__input" id="application2">
-      <label for="application2" class="user-application-form__title">Pink для Android</label>
-      <input type="radio" class="user-application-form__input" id="application3">
-      <label for="application3" class="user-application-form__title">Windows Phone</label>
-    </form>
-  </section>
-  <section class="user-review-block">
-    <p class="user-review-block__promo">опишите свои эмоции</p>
-    <textarea class="user-review-block__form" name="user-review" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-  </section>
-  <button class="form-submit">отправить форму</button>
-  <div class="form-warning"><span>*</span>&mdash;обязательные поля</div>
-  <footer class="form-footer">
-    <div class="form-footer-logo"><a class="form-footer-logo__ref" href="index.html">pink</a></div>
+  </main>
+  <footer class="page-footer">
+    <div class="glasses-logo"><a class="glasses-logo__ref" href="index.html">pink</a></div>
     <div class="social-block">
       <a class="social-block-item social-block-item--twitter" href="#">twitter</a>
       <a class="social-block-item social-block-item--facebook" href="#">facebook</a>
       <a class="social-block-item social-block-item--youtube" href="#">youtube</a>
     </div>
-    <div class="developer-info">Разработано<a class="developer-ref" href="https://htmlacademy.ru">htmlacademy</a></div>
+    <div class="page-footer__developer-info">Разработано<a class="page-footer__developer-ref" href="https://htmlacademy.ru">htmlacademy</a></div>
   </footer>
 </body>
 </html>

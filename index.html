@@ -5,11 +5,11 @@
   <title>pink</title>
 </head>
 <body>
-  <header class="indexpage-header">
+  <header class="page-header page-header--index">
     <div class="top-panel">
       <a href="index.html" class="top-panel__logo">pink</a>
-      <button class="main-menu-toogle">
-        <span class="main-menu-toogle__icon">toogle menu</span>
+      <button class="top-panel__toogle">
+        <span class="top-panel__toogle-icon">toogle menu</span>
       </button>
       <nav class="main-menu main-menu--hidden">
         <a class="main-menu__item "href="#">информация</a>
@@ -18,101 +18,94 @@
         <a class="main-menu__item "href="#">стоимость</a>
       </nav>
     </div>
-    <p>Взгляните на жизнь иначе!</p>
+    <p class="page-header__promo">Взгляните на жизнь иначе!</p>
   </header>
-  <div class="downloads">
-    <a href="#" class="download-btn">Скачать приложение</a>
-    <div class="downloads__os-choice">
-      <a href="#" class="downloads__ios"></a>
-      <a href="#" class="downloads__android"></a>
-      <a href="#" class="downloads__windows"></a>
+  <main class="page-main">
+    <div class="downloads">
+      <a href="#" class="download-btn">Скачать приложение</a>
+      <div class="downloads__os-choice">
+        <a href="#" class="downloads__ios"></a>
+        <a href="#" class="downloads__android"></a>
+        <a href="#" class="downloads__windows"></a>
+      </div>
+      <div class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
     </div>
-    <div class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
-  </div>
-  <div class="promo-block">
-    <div class="promo-block__header">
-      <p>Устали от серости мегаполиса?</p>
-      <p>Нам есть, что вам предложить!</p>
-    </div>
-    <div class="promo-block__description">
-      <b class="promo-block__thesis-header">Поднимает настроение</b>
-      <p class="promo-block__thesis-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-      <b class="promo-block__thesis-header">Меняет мир вокруг</b>
-      <p class="promo-block__thesis-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      <b class="promo-block__thesis-header">Заводит новых друзей</b>
-      <p class="promo-block__thesis-info">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-    </div>
-  </div>
-  <div class="reviews">
-    <div class="reviews__item">
-      <b class="reviews__author-name">Николай Петров</b>
-      <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-      <b class="reviews__author-name">Николай Петров</b>
-      <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-      <b class="reviews__author-name">Николай Петров</b>
-      <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-    </div>
-  </div>
-  <div class="prices">
-    <div class="prices__popular-icon">хит</div>
-    <table class="prices__table">
-      <thead>
-        <tr>
-          <td colspan="2">анлим</td>
-          <td></td>
-          <td colspan="2">стандарт</td>
-          <td></td>
-          <td colspan="2">база</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="2">9,99 usd</td>
-          <td></td>
-          <td colspan="2">3,99 usd</td>
-          <td></td>
-          <td colspan="2">1,99 usd</td>
-          <td></td>
-        </tr>
-      </thead>
-      <tr>
-        <td>розовый фильтр</td>
-        <td>ok</td>
-        <td>розовый фильтр</td>
-        <td>ok</td>
-        <td>розовый фильтр</td>
-        <td>ok</td>
-      </tr>
-      <tr>
-        <td>смайлики</td>
-        <td>no</td>
-        <td>смайлики</td>
-        <td>ok</td>
-        <td>смайлики</td>
-        <td>ok</td>
-      </tr>
-      <tr>
-        <td>комментарии</td>
-        <td>no</td>
-        <td>комментарии</td>
-        <td>no</td>
-        <td>комментарии</td>
-        <td>ok</td>
-      </tr>
-    </table>
-    <div class="prices__switches-content">
-      <input type="radio" name="price-switch" id="price1">
-      <input type="radio" name="price-switch" id="price2" checked>
-      <input type="radio" name="price-switch" id="price3">
-      <div class="prices__switches">
-        <label for="price1">переключатель1</label>
-        <label for="price2">переключатель2</label>
-        <label for="price3">переключатель3</label>
+    <div class="promo-block">
+      <div class="promo-block__header">
+        <p class="promo-block__header-text">Устали от серости мегаполиса?</p>
+        <p class="promo-block__header-text">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="promo-block__description">
+        <b class="promo-block__thesis-header">Поднимает настроение</b>
+        <p class="promo-block__thesis-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько   кликов!</p>
+        <b class="promo-block__thesis-header">Меняет мир вокруг</b>
+        <p class="promo-block__thesis-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <b class="promo-block__thesis-header">Заводит новых друзей</b>
+        <p class="promo-block__thesis-info">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
       </div>
     </div>
-  </div>
+    <div class="reviews">
+      <div class="reviews__item">
+        <b class="reviews__author-name">Николай Петров</b>
+        <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      </div>
+      <div class="reviews__item">
+        <b class="reviews__author-name">Николай Петров</b>
+        <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      </div>
+      <div class="reviews__item">
+        <b class="reviews__author-name">Николай Петров</b>
+        <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      </div>
+      <div class="reviews__switches-content">
+        <input type="radio" name="review-switch" id="review1">
+        <input type="radio" name="review-switch" id="review2" checked>
+        <input type="radio" name="review-switch" id="review3">
+        <div class="reviews__switches">
+          <label for="review1">переключатель1</label>
+          <label for="review2">переключатель2</label>
+          <label for="review3">переключатель3</label>
+        </div>
+    </div>
+    <div class="prices">
+      <div class="prices__popular-icon">хит</div>
+      <table class="prices__table">
+        <tr>
+          <th><span class="prices__table-header-bold">анлим</span>9,99 usd</th>
+          <th class="prices__popular-icon"><span class="prices__table-header-bold">стандарт</span>3,99 usd</th>
+          <th><span class="prices__table-header-bold">база</span>1,99 usd</th>
+        </tr>
+        <tr>
+          <td>розовый фильтр</td>
+          <td>розовый фильтр</td>
+          <td>розовый фильтр</td>
+        </tr>
+        <tr>
+          <td>смайлики</td>
+          <td>смайлики</td>
+          <td>смайлики</td>
+        </tr>
+        <tr>
+          <td>комментарии</td>
+          <td>комментарии</td>
+          <td>комментарии</td>
+        </tr>
+      </table>
+      <div class="prices__switches-content">
+        <input type="radio" name="price-switch" id="price1">
+        <input type="radio" name="price-switch" id="price2" checked>
+        <input type="radio" name="price-switch" id="price3">
+        <div class="prices__switches">
+          <label for="price1">переключатель1</label>
+          <label for="price2">переключатель2</label>
+          <label for="price3">переключатель3</label>
+        </div>
+      </div>
+    </div>
+  </main>
   <footer class="index-footer">
     <div class="contacts">
-      <p class="contacts__header"></p>
+      <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
       <b class="contacts__item-header">Звоните:</b>
       <span class="contacts__item">+7 (812) 555-66-66</span>
       <b class="contacts__item-header">Пишите:</b>
