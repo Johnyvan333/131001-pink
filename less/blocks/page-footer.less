@@ -1,3 +1,89 @@
 .page-footer {
   outline: 2px solid green;
 }
+
+
+
+.page-footer--index {
+  display: none;
+}
+
+@media @tablet-widths {
+  .page-footer--index {
+    display: block;
+  }
+}
+
+@media @desktop-widths {
+  .page-footer--index {
+    display: block;
+  }
+}
+
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-block {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.social-block-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.social-block-item:last-of-type {
+  margin-right: 0;
+}
+
+@media @tablet-widths {
+  .page-footer {
+    width: 620px;
+    padding: 35px 40px;
+
+  &__developer-info {
+    float: right;
+    width: 125px;
+    }
+  }
+
+  .glasses-logo {
+    float: left;
+    width: 150px;
+  }
+
+  .social-block {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+
+@media @desktop-widths {
+  .page-footer {
+    width: 940px;
+    padding: 70px 130px;
+
+  &__developer-info {
+    float: right;
+    width: 155px;
+    }
+  }
+
+  .glasses-logo {
+    float: left;
+    width: 150px;
+  }
+
+  .social-block {
+    display: inline-block;
+    vertical-align: top;
+  }
+}

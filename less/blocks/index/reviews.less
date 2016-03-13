@@ -1,3 +1,66 @@
 .reviews {
-  outline: 2px solid green;
+  outline: 2px solid blue;
+}
+
+
+.reviews {
+  text-align: center;
+  padding-top: 45px;
+
+  &__item {
+    display: none;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &__item--display {
+    display: block;
+  }
+}
+
+@media @tablet-widths {
+  .reviews {
+    padding-top: 100px;
+
+    &__item {
+      position: relative;
+      .container;
+      line-height: 30px;
+    }
+
+    &__author-name {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .reviews {
+    padding-top: 75px;
+
+    &__item {
+      position: relative;
+      width: 680px;
+      padding-bottom: 40px;
+      line-height: 30px;
+    }
+
+    &__author-name {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    &__author-name::after {
+      display: block;
+      margin: 0 auto;
+      margin-top: -15px;
+      content: "25 лет, водитель трамвая";
+      font-weight: normal;
+    }
+  }
 }

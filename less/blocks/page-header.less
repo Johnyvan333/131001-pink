@@ -1,3 +1,116 @@
 .page-header {
   outline: 2px solid green;
 }
+
+.main-menu {
+  outline: 2px solid yellow;
+}
+
+
+
+
+.page-header {
+  position: relative;
+  height: 730px;
+  width: 320px;
+  margin: 0 auto;
+
+  &__promo {
+    display: none;
+  }
+}
+
+.top-panel {
+  height: 65px;
+}
+
+.top-panel__toogle {
+  float: right;
+  width: 45px;
+}
+
+.text-logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 5;
+}
+
+.main-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.main-menu__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-menu__ref {
+  display: block;
+  line-height: 65px;
+  text-align: center;
+}
+
+@media @tablet-widths {
+  .page-header {
+    width: 700px;
+
+    &__promo {
+      display: block;
+      width: 195px;
+      margin-left: 95px;
+      margin-top: 100px;
+    }
+  }
+
+  .text-logo {
+    left: 40px;
+  }
+}
+
+@media @desktop-widths {
+  .page-header {
+    width: 1200px;
+
+    &__promo {
+      display: block;
+      width: 300px;
+      height: 210px;
+      margin-left: 130px;
+      margin-top: 100px;
+    }
+  }
+
+  .text-logo {
+    left: 130px;
+  }
+
+  .top-panel__toogle {
+    display: none;
+  }
+
+  .main-menu {
+    position: static;
+    float: right;
+    max-width: 700px;
+    margin-right: 130px;
+
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &__ref {
+      width: 160px;
+    }
+
+    &__item--close {
+      display: none;
+    }
+  }
+}

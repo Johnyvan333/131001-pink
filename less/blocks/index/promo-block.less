@@ -1,3 +1,119 @@
 .promo-block {
   outline: 2px solid green;
 }
+
+
+
+.promo-block {
+  height: 960px;
+  padding-top: 40px;
+  text-align: center;
+
+  &__header-text {
+    width: 280px;
+    margin: 20px auto;
+ }
+
+ &__description {
+   padding: 0 20px;
+   padding-top: 55px;
+ }
+
+ &__thesis-header {
+   display: block;
+ }
+
+ &__thesis-info {
+   margin-bottom: 30px;
+ }
+
+ &__science-block {
+   display: none;
+ }
+}
+
+@media @tablet-widths {
+  .promo-block {
+    height: 1010px;
+    padding-top: 50px;
+
+    &__header-text {
+      width: 350px;
+      line-height: 100px;
+      text-align: center;
+    }
+
+    &__header-text:first-of-type {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    &__description {
+      float: right;
+      width: 310px;
+      margin-right: 40px;
+      text-align: left;
+    }
+
+    &__science-block {
+      display: block;
+    }
+
+    &__science-block-wrapper {
+      float: right;
+      width: 310px;
+      margin-right: 40px;
+    }
+
+    &__science-block-header {
+      width: 175px;
+      line-height: 35px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .promo-block {
+    height: 1300px;
+    padding-top: 60px;
+
+    &__header-text {
+      width: 420px;
+      line-height: 60px;
+      
+      font-size: 50px;
+    }
+
+    &__header-text:first-of-type {
+      width: 750px;
+    }
+
+    &__thesis-wrapper {
+      display: inline-block;
+      vertical-align: top;
+      width: 250px;
+      height: 600px;
+      margin-right: 40px;
+    }
+
+    &__thesis-wrapper:last-of-type {
+      margin-right: 0;
+    }
+
+    &__thesis-header {
+      margin-top: 420px;
+    }
+
+    &__science-block {
+      display: block;
+      margin-right: 170px;
+    }
+
+    &__science-block-wrapper {
+      float: right;
+      margin-top: 140px;
+      width: 530px;
+      text-align: left;
+    }
+  }
+}

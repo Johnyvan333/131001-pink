@@ -1,16 +1,47 @@
-body {
-  background: #333;
+@mobile-widths-only: ~"(max-width: 699px)";
+@tablet-widths: ~"(min-widht: 700px)";
+@desktop-widths: ~"(min-width: 1200px)";
+
+.clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
 
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 620px;
+  }
+
+  @media @desktop-widths {
+    width: 940px;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+  background: white;
+}
+
+
+
 @import "fonts.less";
-@import "less/blocks/page-header.less";
+@import "blocks/page-header.less";
 @import "blocks/page-footer.less";
 @import "blocks/page-main.less";
 
 @import "blocks/form/user-form.less";
 
 @import "blocks/index/downloads.less";
-@import "blocks/index/index-footer.less";
+@import "blocks/index/contacts.less";
 @import "blocks/index/prices.less";
 @import "blocks/index/promo-block.less";
 @import "blocks/index/reviews.less";
@@ -20,5 +51,4 @@ body {
 @import "blocks/photo/photo-form.less";
 @import "blocks/photo/user-post.less";
 
-@import "blocks/logo/text-logo.less";
 @import "blocks/logo/glasses-logo.less";

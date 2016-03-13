@@ -1,3 +1,31 @@
 .downloads {
-  outline: 2px solid green;
+  outline: 2px solid red;
+}
+
+.downloads {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 270px;
+  width: auto;
+  padding: 30px 20px;
+}
+
+@media @tablet-widths {
+  .downloads {
+    left: 40px;
+    bottom: 105px;
+    padding: 0;
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media @desktop-widths {
+  .downloads {
+    left: 130px;
+    height: 300px;
+    bottom: 110px;
+    padding: 0;
+  }
 }
