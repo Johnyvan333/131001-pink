@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>pink</title>
 </head>
@@ -10,18 +11,19 @@
     <div class="top-panel">
       <a href="index.html" class="text-logo">pink</a>
       <button class="top-panel__toogle">
-        <span class="top-panel__toogle-icon">toogle menu</span>
+        <span class="top-panel__toogle-icon">toogle</span>
       </button>
       <nav class="main-menu main-menu--hidden">
-        <a class="main-menu__item "href="#">информация</a>
-        <a class="main-menu__item "href="#">возможности</a>
-        <a class="main-menu__item "href="#">отзывы</a>
-        <a class="main-menu__item "href="#">стоимость</a>
+        <ul class="main-menu__items">
+          <li class="main-menu__item main-menu__item--close"><span class="main-menu__ref main-menu__ref--close">закрыть</span></li>
+          <li class="main-menu__item"><a class="main-menu__ref">главная</a></li>
+          <li class="main-menu__item"><a class="main-menu__ref" href="#">фотографии</a></li>
+          <li class="main-menu__item"><a class="main-menu__ref" href="#">конкурсы</a></li>
+          <li class="main-menu__item"><a class="main-menu__ref" href="#">html academy</a></li>
+        </ul>
       </nav>
     </div>
     <p class="page-header__promo">Взгляните на жизнь иначе!</p>
-  </header>
-  <main class="page-main">
     <div class="downloads">
       <a href="#" class="download-btn">Скачать приложение</a>
       <div class="downloads__os-choice">
@@ -31,22 +33,37 @@
       </div>
       <div class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
     </div>
+  </header>
+  <main class="page-main">
     <div class="promo-block">
       <div class="promo-block__header">
         <p class="promo-block__header-text">Устали от серости мегаполиса?</p>
         <p class="promo-block__header-text">Нам есть, что вам предложить!</p>
       </div>
       <div class="promo-block__description">
-        <b class="promo-block__thesis-header">Поднимает настроение</b>
-        <p class="promo-block__thesis-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько   кликов!</p>
-        <b class="promo-block__thesis-header">Меняет мир вокруг</b>
-        <p class="promo-block__thesis-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        <b class="promo-block__thesis-header">Заводит новых друзей</b>
-        <p class="promo-block__thesis-info">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="promo-block__thesis-wrapper">
+          <b class="promo-block__thesis-header">Поднимает настроение</b>
+          <p class="promo-block__thesis-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько   кликов!</p>
+        </div>
+        <div class="promo-block__thesis-wrapper">
+          <b class="promo-block__thesis-header">Меняет мир вокруг</b>
+          <p class="promo-block__thesis-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="promo-block__thesis-wrapper">
+          <b class="promo-block__thesis-header">Заводит новых друзей</b>
+          <p class="promo-block__thesis-info">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </div>
+      <div class="promo-block__science-block">
+        <div class="promo-block__science-block-wrapper">
+          <b class="promo-block__science-header">Эффект на 24 часа!</b>
+          <p class="promo-block__science-info">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="promo-block__science-ref" href="#">узнать больше об исследовании</a>
+        </div>
       </div>
     </div>
     <div class="reviews">
-      <div class="reviews__item">
+      <div class="reviews__item reviews__item--display">
         <b class="reviews__author-name">Николай Петров</b>
         <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
       </div>
@@ -59,13 +76,13 @@
         <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
       </div>
       <div class="switches">
-        <input class="switches__input" type="radio" name="review-switch" value="review1" id="review1">
-        <input class="switches__input" type="radio" name="review-switch" value="review2" id="review2" checked>
+        <input class="switches__input" type="radio" name="review-switch" value="review1" id="review1" checked>
+        <input class="switches__input" type="radio" name="review-switch" value="review2" id="review2">
         <input class="switches__input" type="radio" name="review-switch" value="review3" id="review3">
         <div class="switches__items-wrapper">
-          <label class="switches__item" for="review1">переключатель1</label>
-          <label class="switches__item" for="review2">переключатель2</label>
-          <label class="switches__item" for="review3">переключатель3</label>
+          <label class="switches__item" for="review1"></label>
+          <label class="switches__item" for="review2"></label>
+          <label class="switches__item" for="review3"></label>
         </div>
       </div>
     </div>
@@ -92,31 +109,44 @@
           <td class="prices__table-item prices__table-item--included">комментарии</td>
         </tr>
       </table>
-      <div class="switches">
+      <div class="switches switches--prices">
         <input class="switches__input" type="radio" name="price-switch" value="price1" id="price1">
         <input class="switches__input" type="radio" name="price-switch" value="price2" id="price2" checked>
         <input class="switches__input" type="radio" name="price-switch" value="price3" id="price3">
         <div class="switches__items-wrapper">
-          <label class="switches__item" for="price1">переключатель1</label>
-          <label class="switches__item" for="price2">переключатель2</label>
-          <label class="switches__item" for="price3">переключатель3</label>
+          <label class="switches__item" for="price1"></label>
+          <label class="switches__item" for="price2"></label>
+          <label class="switches__item" for="price3"></label>
         </div>
       </div>
     </div>
-  </main>
-  <footer class="index-footer">
-    <div class="index-footer__contacts">
-      <p class="index-footer__contacts-header">Остались вопросы? Свяжитесь с нами!</p>
-      <b class="index-footer__item-header">Звоните:</b>
-      <span class="index-footer__item">+7 (812) 555-66-66</span>
-      <b class="index-footer__item-header">Пишите:</b>
-      <span class="index-footer__item">
-        <a href="mailto:mail@htmlacademy.ru" class="index-footer__email">mail@htmlacademy.ru</a>
-      </span>
-      <b class="index-footer__item-header"></b>
-      <span class="index-footer__item">ул. Большая Конюшенная, 19/8</span>
+    <div class="contacts">
+      <div class="contacts__wrapper">
+        <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="contacts__item-wrapper">
+          <b class="contacts__item-header">Звоните:</b>
+          <span class="contacts__item">+7 (812) 555-66-66</span>
+        </div>
+        <div class="contacts__item-wrapper">
+          <b class="contacts__item-header">Пишите:</b>
+          <span class="contacts__item"><a href="mailto:mail@htmlacademy.ru" class="contacts__email">mail@htmlacademy.ru</a></span>
+        </div>
+        <div class="contacts__item-wrapper">
+          <b class="contacts__item-header">Приезжайте в гости:</b>
+          <span class="contacts__item">ул. Большая Конюшенная, 19/8</span>
+        </div>
+      </div>
+      <div class="contacts__map"></div>
     </div>
-    <div class="index-footer__map"></div>
+  </main>
+  <footer class="page-footer page-footer--index">
+    <div class="glasses-logo"><a class="glasses-logo__ref" href="index.html">pink</a></div>
+    <div class="social-block">
+      <a class="social-block-item social-block-item--twitter" href="#">twit</a>
+      <a class="social-block-item social-block-item--facebook" href="#">fb</a>
+      <a class="social-block-item social-block-item--youtube" href="#">yt</a>
+    </div>
+    <div class="page-footer__developer-info">Разработано<a class="page-footer__developer-ref" href="https://htmlacademy.ru">HA</a></div>
   </footer>
 </body>
 </html>
