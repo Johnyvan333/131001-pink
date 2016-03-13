@@ -11,12 +11,23 @@
 
 .page-header {
   position: relative;
-  height: 730px;
+  height: 237px;
   width: 320px;
   margin: 0 auto;
 
+  &--index {
+    height: 730px;
+  }
+
   &__promo {
     display: none;
+  }
+
+  &__info {
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
   }
 }
 
@@ -59,12 +70,22 @@
 @media @tablet-widths {
   .page-header {
     width: 700px;
+    height: 440px;
+
+    &--index {
+      height: 730px;
+    }
 
     &__promo {
       display: block;
       width: 195px;
       margin-left: 95px;
       margin-top: 100px;
+    }
+
+    &__info {
+      margin-top: 80px;
+      width: 475px;
     }
   }
 
@@ -76,6 +97,11 @@
 @media @desktop-widths {
   .page-header {
     width: 1200px;
+    height: 395px;
+
+    &--index {
+      height: 730px;
+    }
 
     &__promo {
       display: block;
@@ -83,6 +109,11 @@
       height: 210px;
       margin-left: 130px;
       margin-top: 100px;
+    }
+
+    &__info {
+      width: 750px;
+      margin-top: 75px;
     }
   }
 

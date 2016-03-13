@@ -14,13 +14,16 @@
         <span class="top-panel__toogle-icon">toogle menu</span>
       </button>
       <nav class="main-menu main-menu--hidden">
-        <a class="main-menu__item "href="index.html">главная</a>
-        <a class="main-menu__item "href="#">фотографии</a>
-        <a class="main-menu__item "href="#">конкурс</a>
-        <a class="main-menu__item "href="#">html academy</a>
+        <ul class="main-menu__items">
+          <li class="main-menu__item main-menu__item--close"><span class="main-menu__ref main-menu__ref--close">закрыть</span></li>
+          <li class="main-menu__item"><a href="index.html" class="main-menu__ref">главная</a></li>
+          <li class="main-menu__item"><a class="main-menu__ref" href="photo.html">фотографии</a></li>
+          <li class="main-menu__item"><a class="main-menu__ref" href="#">конкурсы</a></li>
+          <li class="main-menu__item"><a class="main-menu__ref" href="#">html academy</a></li>
+        </ul>
       </nav>
     </div>
-    <p class="page-header__promo">Конкурс на самое безбашенное путешествие с Пинк</p>
+    <p class="page-header__info">Конкурс на самое безбашенное путешествие с Пинк</p>
   </header>
   <main class="page-main">
     <form action="#" class="user-form" method="post">
@@ -41,7 +44,7 @@
           <input type="checkbox" name="achievment1" class="user-form__achievments-input" id="achievment1">
           <label for="achievment1" class="user-form__achievments-title">Сделал селфи с акулой</label>
           <input type="checkbox" name="achievment2" class="user-form__achievments-input" id="achievment2">
-          <label for="achievment2" class="user-form__achievments-title">обгорел на пляже</label>
+          <label for="achievment2" class="user-form__achievments-title">Обгорел на пляже</label>
           <input type="checkbox" name="achievment3" class="user-form__achievments-input" id="achievment3">
           <label for="achievment3" class="user-form__achievments-title">Видел Чака Норриса</label>
           <input type="checkbox" name="achievment4" class="user-form__achievments-input" id="achievment4">
