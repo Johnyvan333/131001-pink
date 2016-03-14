@@ -28,14 +28,20 @@
   <main class="page-main">
     <form action="#" class="user-form" method="post">
       <section class="user-form__name-block">
-        <p class="user-form__name-promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="user-form__name-promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="user-form__name-promo-add">Пожалуйста, заполните форму ниже:</span></p>
         <div class="user-form__name-wrapper">
-          <label class="user-form__name-title" for="user-name">имя:</label>
-          <input class="user-form__name-input" id="user-name" type="text" placeholder="Введите ваше имя">
-          <label class="user-form__name-title" for="user-surname">фамилия:</label>
-          <input class="user-form__name-input" id="user-surname" type="text" placeholder="Укажите фамилию">
-          <label class="user-form__name-title" for="user-patronymic">отчество:</label>
-          <input class="user-form__name-input" id="user-patromymic" type="text" placeholder="Ну и отчество тоже">
+          <div class="user-form__name-item-wrapper">
+            <label class="user-form__name-title" for="user-name">имя:</label>
+            <input class="user-form__name-input user-form__name-input--long" id="user-name" type="text" placeholder="Введите ваше имя">
+          </div>
+          <div class="user-form__name-item-wrapper">
+            <label class="user-form__name-title" for="user-surname">фамилия:</label>
+            <input class="user-form__name-input" id="user-surname" type="text" placeholder="Укажите фамилию">
+          </div>
+          <div class="user-form__name-item-wrapper">
+            <label class="user-form__name-title" for="user-patronymic">отчество:</label>
+            <input class="user-form__name-input" id="user-patromymic" type="text" placeholder="Ну и отчество тоже">
+          </div>
         </div>
       </section>
       <section class="user-form__achievments-block">
@@ -56,10 +62,14 @@
         </div>
       </section>
       <section class="user-form__contacts-block">
-        <label class="user-form__contacts-title" for="user-phone">номерок телефончика</label>
-        <input class="user-form__contacts-input" id="user-phone" type="tel" placeholder="Номерок, пожалуйста">
-        <label class="user-form__contacts-title" for="user-email">адресок почты</label>
-        <input class="user-form__contacts-input" id="user-email" type="email" placeholder="E-mail, пожалуйста">
+        <div class="user-form__contacts-item-wrapper">
+          <label class="user-form__contacts-title" for="user-phone">номерок телефон<span class="user-form__contacts-title-hidden">чик</span>а</label>
+          <input class="user-form__contacts-input" id="user-phone" type="tel" placeholder="Номерок, пожалуйста">
+        </div>
+        <div class="user-form__contacts-item-wrapper">
+          <label class="user-form__contacts-title" for="user-email">адрес<span class="user-form__contacts-title-hidden">ок</span> почты</label>
+          <input class="user-form__contacts-input" id="user-email" type="email" placeholder="E-mail, пожалуйста">
+        </div>
       </section>
       <section class="user-form__application-block">
         <p class="user-form__application-promo">с каким приложением путешествовали</p>
