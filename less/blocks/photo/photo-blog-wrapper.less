@@ -62,27 +62,80 @@ article {
   text-align: left;
 }
 
-.photo-form {
-  width: 280px;
-  margin: 0 auto;
 
-  &__photo-wrapper {
-  width: 280px;
-  height: 386px;
+@media @tablet-widths {
+  .photo-blog-wrapper {
+    padding: 0;
+    .container;
+    margin: 0 auto;
+
+    &__header {
+      width: 440px;
+      margin: 0 auto;
+      margin-bottom: 80px;
+    }
+
+    &__footer {
+      width: 440px;
+      margin: 65px auto;
+    }
   }
 
-  &__settings-block {
-    text-align: center;
+
+  .post-main {
+    width: 620px;
+    position: relative;
+    margin-bottom: 40px;
+
+    &__image-wrapper {
+      width: 700px;
+      height: 510px;
+      margin-left: -40px;
+    }
+
+    &__message {
+      padding: 20px;
+    }
   }
 
-  &__buttons-block {
-    padding: 40px 0;
+
+  .user-post {
+    display: inline-block;
+    vertical-align: top;
+
+    padding: 0;
+    margin-right: 16px;
+    margin-bottom: 15px;
+    width: 300px;
+
+    text-align: left;
+
+    &__image-wrapper {
+      height: 300px;
+      width: 100%;
+    }
+
+    &__rating-btn {
+      margin: 24px;
+      margin-top: 0;
+    }
+
+    &__rating-btn--main {
+      position: absolute;
+      right: 0;
+      top: 555px;
+    }
   }
 
-  &__btn {
-    width: 280px;
-    height: 60px;
-    margin-bottom: 10px;
+  .user-post:nth-of-type(2n+1) {
+    margin-right: 0;
+  }
+
+
+  .user-message {
+    padding: 24px;
+    padding-bottom: 0;
+    min-height: 70px;
   }
 }
 
@@ -149,6 +202,10 @@ article {
     }
   }
 
+  .user-post:nth-of-type(2n+1) {
+    margin-right: 16px;
+  }
+
   .user-post:nth-of-type(3n+1) {
     margin-right: 0;
   }
@@ -158,40 +215,5 @@ article {
     padding: 24px;
     padding-bottom: 15px;
     min-height: 80px;
-  }
-
-  .photo-form {
-    width: 800px;
-    margin: 0 auto;
-    padding: 60px;
-    padding-left: 80px;
-
-    &__photo-wrapper {
-      float: left;
-      width: 300px;
-      height: 400px;
-      outline: 2px solid red;
-    }
-
-    &__settings-block {
-      float: right;
-      outline: 2px solid red;
-      width: 410px;
-      height: 200px;
-    }
-
-    &__buttons-block {
-      float: right;
-      margin-top: 100px;
-      width: 410px;
-    }
-
-    &__btn {
-      width: 184px;
-    }
-
-    &__btn--cancel {
-      float: right;
-    }
   }
 }

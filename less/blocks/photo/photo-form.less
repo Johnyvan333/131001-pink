@@ -1,3 +1,100 @@
 .photo-form {
   outline: 2px solid green;
 }
+
+
+.photo-form {
+  width: 280px;
+  margin: 0 auto;
+
+  &__photo-wrapper {
+  width: 280px;
+  height: 386px;
+  }
+
+  &__settings-block {
+    text-align: center;
+  }
+
+  &__buttons-block {
+    padding: 40px 0;
+  }
+
+  &__btn {
+    width: 280px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media @tablet-widths {
+  .photo-form {
+    width: 620px;
+    margin: 0 auto;
+    padding: 60px 40px;
+
+    &__photo-wrapper {
+      float: left;
+      width: 300px;
+      height: 400px;
+      outline: 2px solid red;
+    }
+
+    &__settings-block {
+      float: right;
+      outline: 2px solid red;
+      width: 275px;
+      height: 200px;
+    }
+
+    &__buttons-block {
+      float: right;
+      margin-top: 30px;
+      width: 275px;
+      text-align: left;
+    }
+
+    &__btn {
+      width: 260px;
+    }
+  }
+}
+
+
+@media @desktop-widths {
+  .photo-form {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px;
+    padding-left: 80px;
+
+    &__photo-wrapper {
+      float: left;
+      width: 300px;
+      height: 400px;
+      outline: 2px solid red;
+    }
+
+    &__settings-block {
+      float: right;
+      outline: 2px solid red;
+      width: 410px;
+      height: 200px;
+    }
+
+    &__buttons-block {
+      float: right;
+      margin-top: 100px;
+      width: 410px;
+    }
+
+    &__btn {
+      width: 184px;
+    }
+
+    &__btn--cancel {
+      float: right;
+    }
+  }
+}
