@@ -10,12 +10,17 @@
 
   &__table {
     width: 900px;
-    margin-left: -280px;
+    margin-left: -290px;
+    border-collapse: collapse;
   }
 
   &__table-header {
     text-align: center;
     line-height: 30px;
+  }
+
+  &__table-header--hidden {
+    display: none;
   }
 
   &__table-header-bold {
@@ -24,6 +29,48 @@
 
   &__table-item {
     padding: 10px;
+    line-height: 20px;
     border: 1px solid gray;
+  }
+
+  &__table-item--hidden {
+    display: none;
+  }
+}
+
+
+@media @tablet-widths {
+  .prices {
+    width: 620px;
+    margin: 0 auto;
+    padding: 70px 0;
+
+    &__table {
+      width: 100%;
+      margin: 0;
+    }
+
+    &__table-header--hidden {
+      display: table-cell;
+      font-size: 0;      
+    }
+
+    &__table-item {
+      font-size: 0;
+      width: 25%;
+    }
+
+    &__table-item--hidden {
+      display: table-cell;
+      font-size: 14px;
+    }
+  }
+}
+
+
+@media @desktop-widths {
+  .prices {
+    width: 940px;
+    padding: 100px 0;
   }
 }
