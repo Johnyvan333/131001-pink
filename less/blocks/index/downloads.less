@@ -1,23 +1,95 @@
 .downloads {
-  outline: 2px solid red;
-}
-
-.downloads {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 270px;
-  width: auto;
+  height: 210px;
+  width: 280px;
   padding: 30px 20px;
+
+  text-align: center;
+  background: #1d2631;
 }
+
+.download-btn {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 17px 0;
+  cursor: pointer;
+
+  color: white;
+  font-size: 18px;
+  line-height: 1.1em;
+  text-align: center;
+  text-decoration: none;
+
+  border: 3px solid white;
+  border-radius: 54px;
+}
+
+.downloads__os-choice {
+  display: table;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.downloads__os {
+  display: table-cell;
+  width: 75px;
+  height: 75px;
+
+  font-size: 0;
+}
+
+.downloads__os--ios {
+  background: url("../../../img/logo-apple.svg") no-repeat 50% 50%;
+}
+
+.downloads__os--android {
+  background: url("../../../img/logo-android.svg") no-repeat 50% 50%;
+}
+
+.downloads__os--windows {
+  background: url("../../../img/logo-microsoft.svg") no-repeat 50% 50%;
+}
+
+.downloads__text {
+  width: 240px;
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 100;
+  text-align: center;
+}
+
 
 @media @tablet-widths {
   .downloads {
     left: 40px;
-    bottom: 105px;
+    bottom: 100px;
     padding: 0;
     width: 300px;
     height: 250px;
+
+    background: none;
+
+
+    &__os-choice {
+      margin-bottom: 20px;
+    }    
+
+    &__text {
+      width: 310px;
+      margin: 0 auto;
+
+      font-size: 18px;
+    }
+  }
+
+  .download-btn {
+    margin-bottom: 30px;
   }
 }
 
@@ -27,5 +99,14 @@
     height: 300px;
     bottom: 110px;
     padding: 0;
+
+
+    &__os-choice {
+      margin-bottom: 50px;
+    }
+  }
+
+  .download-btn {
+    margin-bottom: 60px;
   }
 }

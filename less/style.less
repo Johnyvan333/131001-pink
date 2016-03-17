@@ -1,38 +1,4 @@
-@mobile-widths-only: ~"(max-width: 699px)";
-@tablet-widths: ~"(min-width: 700px)";
-@desktop-widths: ~"(min-width: 1200px)";
-
-.clearfix {
-  &::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-}
-
-.container {
-  width: 320px;
-  margin: 0 auto;
-
-  @media @tablet-widths {
-    width: 620px;
-  }
-
-  @media @desktop-widths {
-    width: 940px;
-  }
-}
-
-body {
-  padding: 0;
-  margin: 0;
-
-  font-size: 14px;
-  background: white;
-}
-
-
-
+@import "global.less";
 @import "fonts.less";
 @import "blocks/page-header.less";
 @import "blocks/page-footer.less";
