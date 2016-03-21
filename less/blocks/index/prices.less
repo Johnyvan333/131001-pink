@@ -1,22 +1,36 @@
 .prices {
-  outline: 2px solid green;
-}
+  position: relative;
+  padding-top: 68px;
+  padding-bottom: 35px;
 
-
-
-.prices {
   overflow: hidden;
+
+  background: #f2f2f2;
 
 
   &__table {
     width: 900px;
+    margin-bottom: 40px;
     margin-left: -290px;
+
+    background: white;
     border-collapse: collapse;
   }
 
   &__table-header {
     text-align: center;
+    height: 98px;
+
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+    text-transform: uppercase;
     line-height: 30px;
+
+    background: #283645;
+    border: 2px solid #e5e5e5;
+    border-top: none;
+    border-bottom: none;
   }
 
   &__table-header--hidden {
@@ -25,16 +39,33 @@
 
   &__table-header-bold {
     display: block;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
   }
 
   &__table-item {
-    padding: 10px;
-    line-height: 20px;
-    border: 1px solid gray;
+    height: 50px;
+    padding-left: 24px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+
+    border: 2px solid #e5e5e5;
+    border-top: none;
   }
 
   &__table-item--hidden {
     display: none;
+  }
+
+  &__table-item--included {
+    background: url(../img/icon-yes.svg) 90% 50% no-repeat;
+  }
+
+  &__table-item--not-included {
+    background: url(../img/icon-no.svg) 90% 50% no-repeat;
   }
 }
 
@@ -43,26 +74,58 @@
   .prices {
     width: 620px;
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 70px 40px;
 
     &__table {
       width: 100%;
       margin: 0;
     }
 
+    &__table-header {
+      font-size: 18px;
+    }
+
+    &__table-header:nth-of-type(2) {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      border-left: none;
+    }
+
+    &__table-header:nth-of-type(4) {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-right: none;
+    }
+
+    &__table-header-bold {
+      font-size: 16px;
+    }
+
     &__table-header--hidden {
       display: table-cell;
-      font-size: 0;      
+      font-size: 0;
+
+      background: #f2f2f2;
+      border: none;
     }
 
     &__table-item {
       font-size: 0;
       width: 25%;
+
+      background-position: 50% 50%;
     }
 
     &__table-item--hidden {
       display: table-cell;
+      padding-left: 18px;
+
+      color: #283645;
       font-size: 14px;
+      text-transform: inherit;
+      line-height: 30px;
+
+      border-top: 2px solid #e5e5e5;
     }
   }
 }
@@ -71,6 +134,6 @@
 @media @desktop-widths {
   .prices {
     width: 940px;
-    padding: 100px 0;
+    padding: 100px 130px;
   }
 }

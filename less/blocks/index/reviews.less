@@ -1,22 +1,52 @@
 .reviews {
-  outline: 2px solid blue;
-}
-
-
-.reviews {
+  position: relative;
   text-align: center;
-  padding-top: 45px;
+  padding-top: 50px;
+  padding-bottom: 120px;
 
   &__item {
     display: none;
     width: 280px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 
   &__item--display {
     display: block;
   }
+
+  &__author-name {
+    margin-bottom: 17px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  &__content {
+    color: #283645;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  &__toogle {
+    display: none;
+  }
+}
+
+.reviews::after {
+    position: absolute;
+    content: '';
+    height: 35px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+
+    background: linear-gradient(
+      to bottom right,
+      transparent 50%,
+      #f2f2f2 50%);
 }
 
 
@@ -27,36 +57,9 @@
     &__item {
       position: relative;
       .container;
-      padding-bottom: 70px;
-      line-height: 30px;
-    }
-
-    &__author-name {
-      position: absolute;
-      bottom: 20px;
-      left: 0;
-      right: 0;
-    }
-
-    &__author-name::after {
-      display: block;
       margin: 0 auto;
-      margin-top: -15px;
-      content: "25 лет, водитель трамвая";
-      font-weight: normal;
-    }
-  }
-}
-
-@media @desktop-widths {
-  .reviews {
-    padding-top: 75px;
-
-    &__item {
-      position: relative;
-      width: 680px;
-      padding-bottom: 40px;
-      line-height: 30px;
+      margin-bottom: 35px;
+      padding-bottom: 90px;
     }
 
     &__author-name {
@@ -64,14 +67,109 @@
       bottom: 0;
       left: 0;
       right: 0;
+      margin: 0;
+
+      font-size: 20px;
     }
 
     &__author-name::after {
       display: block;
       margin: 0 auto;
-      margin-top: -15px;
       content: "25 лет, водитель трамвая";
+
+      color: #283645;
+      font-size: 14px;
+      line-height: 30px;
       font-weight: normal;
     }
+
+    &__content {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .reviews::after {
+      position: absolute;
+      content: '';
+      height: 56px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+
+      background: linear-gradient(
+        to bottom right,
+        transparent 50%,
+        #f2f2f2 50%);
+  }
+}
+
+@media @desktop-widths {
+  .reviews {
+    position: relative;
+    padding-top: 190px;
+    padding-bottom: 120px;
+
+    background: url(../img/quotes.png) 50% 15% no-repeat;
+
+    &__item {
+      position: relative;
+      width: 680px;
+      padding-bottom: 80px;
+    }
+
+    &__author-name {
+      font-size: 24px;
+    }
+
+    &__author-name::after {
+      font-size: 18px;
+    }
+
+    &__toogle {
+      display: block;
+      position: absolute;
+
+      width: 21px;
+      height: 21px;
+
+      font-size: 0;
+
+      border: 2px solid #bec2c7;
+      border-left-color: transparent;
+      border-top-color: transparent;
+
+      cursor: pointer;
+    }
+
+    &__toogle-prev {
+      left: 130px;
+      top: 250px;
+
+      transform: rotate(135deg);
+    }
+
+    &__toogle-next {
+      right: 130px;
+      top: 250px;
+
+      transform: rotate(-45deg);
+    }
+  }
+
+  .reviews::after {
+      position: absolute;
+      content: '';
+      height: 81px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+
+      background: linear-gradient(
+        to bottom right,
+        transparent 50%,
+        #f2f2f2 50%);
   }
 }
