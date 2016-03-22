@@ -40,7 +40,7 @@
           </div>
           <div class="user-form__name-item-wrapper">
             <label class="user-form__name-title" for="user-patronymic">отчество:</label>
-            <input class="user-form__name-input" id="user-patromymic" type="text" placeholder="Ну и отчество тоже">
+            <input class="user-form__name-input" id="user-patronymic" type="text" placeholder="Ну и отчество тоже">
           </div>
         </div>
       </section>
@@ -62,6 +62,7 @@
         </div>
       </section>
       <section class="user-form__contacts-block">
+        <div class="user-form__contacts-header">контактная информация</div>
         <div class="user-form__contacts-item-wrapper">
           <label class="user-form__contacts-title" for="user-phone">номерок телефон<span class="user-form__contacts-title-hidden">чик</span>а</label>
           <input class="user-form__contacts-input" id="user-phone" type="tel" placeholder="Номерок, пожалуйста">
@@ -72,11 +73,11 @@
         </div>
       </section>
       <section class="user-form__application-block">
-        <p class="user-form__application-promo">с каким приложением путешествовали</p>
+        <p class="user-form__application-promo">с каким приложением путешествовали?</p>
         <div class="user-form__application-wrapper">
           <input type="radio" name="application" value="application1" class="user-form__application-input" id="application1">
           <label for="application1" class="user-form__application-title">Pink для iOS</label>
-          <input type="radio" name="application" value="application2" class="user-form__application-nput" id="application2">
+          <input type="radio" name="application" value="application2" class="user-form__application-input" id="application2">
           <label for="application2" class="user-form__application-title">Pink для Android</label>
           <input type="radio" name="application" value="application3" class="user-form__application-input" id="application3">
           <label for="application3" class="user-form__application-title">Windows Phone</label>
@@ -86,8 +87,10 @@
         <p class="user-form__review-promo">опишите свои эмоции</p>
         <textarea class="user-form__review-textarea" name="user-review" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </section>
-      <button type="submit" class="user-form__submit">отправить форму</button>
-      <div class="user-form__warning"><span>*</span>&mdash;обязательные поля</div>
+      <section class="user-form__submit-block">
+        <button type="submit" class="user-form__submit">отправить форму</button>
+        <div class="user-form__warning"><span>* </span>&mdash; обязательные поля</div>
+      </section>
     </form>
   </main>
   <footer class="page-footer">
