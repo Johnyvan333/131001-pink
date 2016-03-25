@@ -27,12 +27,12 @@
   </header>
   <main class="page-main">
     <form action="#" class="user-form" method="post">
+      <p class="user-form__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="user-form__promo-add">Пожалуйста, заполните форму ниже:</span></p>
       <section class="user-form__name-block">
-        <p class="user-form__name-promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="user-form__name-promo-add">Пожалуйста, заполните форму ниже:</span></p>
         <div class="user-form__name-wrapper">
           <div class="user-form__name-item-wrapper">
             <label class="user-form__name-title" for="user-name">имя:</label>
-            <input class="user-form__name-input user-form__name-input--long" id="user-name" type="text" placeholder="Введите ваше имя">
+            <input class="user-form__name-input" id="user-name" type="text" placeholder="Введите ваше имя">
           </div>
           <div class="user-form__name-item-wrapper">
             <label class="user-form__name-title" for="user-surname">фамилия:</label>
@@ -89,7 +89,7 @@
       </section>
       <section class="user-form__submit-block">
         <button type="submit" class="user-form__submit">отправить форму</button>
-        <div class="user-form__warning"><span>* </span>&mdash; обязательные поля</div>
+        <div class="user-form__warning"><span class="user-form__warning-red">* </span>&mdash; обязательные <span class="user-form__warning-hidden">для заполнения</span> поля</div>
       </section>
     </form>
   </main>
