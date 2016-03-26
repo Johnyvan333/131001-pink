@@ -10,8 +10,8 @@
 
 
   &--index {
-    height: 730px;
-    background: url("../../../img/iphone-hand-mobile.png") no-repeat 50% 175px, url("../../img/bg-back-mobile.jpg") no-repeat 50% 0 #2b3b4b;
+    height: 729px;
+    background: url("../../../img/iphone-hand-mobile.png") no-repeat 0% 172px, url("../../img/bg-back-mobile.jpg") no-repeat 50% -5px #2b3b4b;
   }
 
   &__promo {
@@ -69,12 +69,16 @@
 
 .text-logo {
   position: absolute;
-  left: 20px;
-  top: 20px;
+  display: block;
+  left: 18px;
+  top: 18px;
+
+  width: 80px;
+  height: 30px;
   z-index: 5;
 
-  color: white;
-  text-decoration: none;
+  font-size: 0;
+  background: url(../img/logo-pink-white-mobile.svg) 50% 50% no-repeat;
 }
 
 .main-menu {
@@ -184,8 +188,13 @@
 
 
   .text-logo {
-    top: 40px;
+    top: 25px;
     left: 40px;
+
+    width: 150px;
+    height: 45px;
+
+    background: url(../img/logotype-white-tablet.png) 50% 50% no-repeat;
   }
 
   .main-menu__ref--close {
@@ -202,7 +211,7 @@
 @media @desktop-widths {
   .page-header {
     width: 1200px;
-    height: 395px;
+    height: 394px;
     background:  url("../../img/bg-back-desktop.jpg") no-repeat 50% 0 #2b3b4b;
 
     &--index {
@@ -241,7 +250,7 @@
     position: static;
     float: right;
     max-width: 700px;
-    margin-right: 110px;
+    margin-right: 100px;
 
     &--hidden {
       display: block;

@@ -124,16 +124,25 @@
     </section>
     <form class="photo-form clearfix">
       <div class="photo-form__photo-wrapper">
-        <img src="../img/photo-7-mobile.jpg" width="280" height="374" alt="ваше фото" class="photo-posting__photo">
+        <img class="photo-form__photo">
       </div>
       <div class="photo-form__settings-block">
         <input type="radio" name="photo-setting" id="photo-setting1" value="photo-setting1" class="photo-form__settings-input">
         <input type="radio" name="photo-setting" id="photo-setting2" value="photo-setting2" class="photo-form__settings-input">
         <input type="radio" name="photo-setting" id="photo-setting3" value="photo-setting3" class="photo-form__settings-input">
         <div class="photo-form__settings-choice">
-          <label for="photo-setting1" class="photo-form__settings-item photo-form__settings-item--option1"></label>
-          <label for="photo-setting2" class="photo-form__settings-item photo-form__settings-item--option2"></label>
-          <label for="photo-setting3" class="photo-form__settings-item photo-form__settings-item--option3"></label>
+          <div class="photo-form__item-wrapper">
+            <label for="photo-setting1" class="photo-form__settings-item photo-form__settings-item--option1"></label>
+            <input type="range" class="photo-form__item-range" name="option1-range">
+          </div>
+          <div class="photo-form__item-wrapper">
+            <label for="photo-setting2" class="photo-form__settings-item photo-form__settings-item--option2"></label>
+            <input type="range" class="photo-form__item-range" name="option2-range">
+          </div>
+          <div class="photo-form__item-wrapper">
+            <label for="photo-setting3" class="photo-form__settings-item photo-form__settings-item--option3"></label>
+            <input type="range" class="photo-form__item-range" name="option3-range">
+          </div>
         </div>
         <input type="range" class="photo-form__settings-range" name="settings-range">
       </div>
