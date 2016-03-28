@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>pink</title>
 </head>
@@ -9,38 +10,41 @@
   <header class="page-header">
     <div class="top-panel">
       <a href="index.html" class="text-logo">pink</a>
-      <button class="top-panel__toogle">
-        <span class="top-panel__toogle-icon">toogle menu</span>
-      </button>
+      <div class="top-panel__toogle">
+        <span class="top-panel__toogle-icon">toogle</span>
+      </div>
       <nav class="main-menu main-menu--hidden">
-        <a class="main-menu__item "href="index.html">главная</a>
-        <a class="main-menu__item "href="#">фотографии</a>
-        <a class="main-menu__item "href="#">конкурс</a>
-        <a class="main-menu__item "href="#">html academy</a>
+        <ul class="main-menu__items">
+          <li class="main-menu__ref main-menu__ref--close">закрыть</li>
+          <li class="main-menu__item"><a href="index.html" class="main-menu__ref">главная</a></li>
+          <li class="main-menu__item"><a class="main-menu__ref">фотографии</a></li>
+          <li class="main-menu__item"><a class="main-menu__ref" href="form.html">конкурсы</a></li>
+          <li class="main-menu__item"><a class="main-menu__ref" href="#">html academy</a></li>
+        </ul>
       </nav>
     </div>
-    <p class="page-header__promo">фотографии пользователей</p>
+    <p class="page-header__info page-header__info--photo">Фотографии пользователей</p>
   </header>
   <main class="page-main">
     <section class="photo-blog-wrapper">
       <p class="photo-blog-wrapper__header">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <article class="user-post">
-        <div class="user-post__image-wrapper">
-          <img src="#" alt="фото поста" class="user-post__image user-post__image--main">
+      <article class="post-main">
+        <div class="post-main__image-wrapper">
+          <img class="post-main__image">
         </div>
-        <div class="user-post__main-promo">панорама дня</div>
-        <div class="user-message">
-          <div class="user-message__user-info">
-            <span class="user-message__user-name">Анна</span>
-            <span class="user-message__message-time">(5 минут назад)</span>
+        <div class="post-main__promo">панорама дня</div>
+        <div class="post-main__message">
+          <div class="post-main__user-info">
+            <span class="post-main__user-name">Анна</span>
+            <span class="post-main__message-time">(5 минут назад)</span>
           </div>
-          <p class="user-message__message-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="post-main__message-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <button class="user-post__rating-btn user-post__rating-btn--main">нравится: 215</button>
         </div>
-        <button class="user-post__rating-btn">нравится: 215</button>
       </article>
       <article class="user-post">
         <div class="user-post__image-wrapper">
-          <img src="#" alt="фото поста" class="user-post__image">
+          <img class="user-post__image user-post__image--1">
         </div>
         <div class="user-message">
           <div class="user-message__user-info">
@@ -48,12 +52,12 @@
             <span class="user-message__message-time">(5 часов назад)</span>
           </div>
           <p class="user-message__message-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <button class="user-post__rating-btn">нравится: 356</button>
         </div>
-        <button class="user-post__rating-btn">нравится: 356</button>
       </article>
       <article class="user-post">
         <div class="user-post__image-wrapper">
-          <img src="#" alt="фото поста" class="user-post__image">
+          <img class="user-post__image user-post__image--2">
         </div>
         <div class="user-message">
           <div class="user-message__user-info">
@@ -61,12 +65,12 @@
             <span class="user-message__message-time">(12 часов назад)</span>
           </div>
           <p class="user-message__message-text">Соседи будут рады!</p>
+          <button class="user-post__rating-btn">нравится: 666</button>
         </div>
-        <button class="user-post__rating-btn">нравится: 666</button>
       </article>
       <article class="user-post">
         <div class="user-post__image-wrapper">
-          <img src="#" alt="фото поста" class="user-post__image">
+          <img class="user-post__image user-post__image--3">
         </div>
         <div class="user-message">
           <div class="user-message__user-info">
@@ -74,12 +78,12 @@
             <span class="user-message__message-time">(20 часов назад)</span>
           </div>
           <p class="user-message__message-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <button class="user-post__rating-btn">нравится: 215</button>
         </div>
-        <button class="user-post__rating-btn">нравится: 215</button>
       </article>
       <article class="user-post">
         <div class="user-post__image-wrapper">
-          <img src="#" alt="фото поста" class="user-post__image">
+          <img class="user-post__image user-post__image--4">
         </div>
         <div class="user-message">
           <div class="user-message__user-info">
@@ -87,12 +91,12 @@
             <span class="user-message__message-time">(25 часов назад)</span>
           </div>
           <p class="user-message__message-text">Самая кубанская в мире!</p>
+          <button class="user-post__rating-btn">нравится: 4</button>
         </div>
-        <button class="user-post__rating-btn">нравится: 4</button>
       </article>
       <article class="user-post">
         <div class="user-post__image-wrapper">
-          <img src="#" alt="фото поста" class="user-post__image">
+          <img class="user-post__image user-post__image--5">
         </div>
         <div class="user-message">
           <div class="user-message__user-info">
@@ -100,12 +104,12 @@
             <span class="user-message__message-time">(40 часов назад)</span>
           </div>
           <p class="user-message__message-text">Где снег-то?</p>
+          <button class="user-post__rating-btn">нравится: 150</button>
         </div>
-        <button class="user-post__rating-btn">нравится: 150</button>
       </article>
       <article class="user-post">
         <div class="user-post__image-wrapper">
-          <img src="#" alt="фото поста" class="user-post__image">
+          <img class="user-post__image user-post__image--6">
         </div>
         <div class="user-message">
           <div class="user-message__user-info">
@@ -113,29 +117,38 @@
             <span class="user-message__message-time">(45 часов назад)</span>
           </div>
           <p class="user-message__message-text">Всем GM и взаимные лайки!</p>
+          <button class="user-post__rating-btn">нравится: 2560</button>
         </div>
-        <button class="user-post__rating-btn">нравится: 2560</button>
       </article>
-      <p class="photo-blog-wrapper__footer">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="photo-blog-wrapper__footer"><span>Затмите их всех!</span> Выкладывайте все, что накопилось в телефоне!</p>
     </section>
-    <form class="photo-form">
+    <form class="photo-form clearfix">
       <div class="photo-form__photo-wrapper">
-        <img src="#" alt="ваше фото" class="photo-posting__photo">
+        <img class="photo-form__photo">
       </div>
       <div class="photo-form__settings-block">
         <input type="radio" name="photo-setting" id="photo-setting1" value="photo-setting1" class="photo-form__settings-input">
         <input type="radio" name="photo-setting" id="photo-setting2" value="photo-setting2" class="photo-form__settings-input">
         <input type="radio" name="photo-setting" id="photo-setting3" value="photo-setting3" class="photo-form__settings-input">
         <div class="photo-form__settings-choice">
-          <label for="photo-setting1" class="photo-form__settings-item photo-posting__settings-item--option1"></label>
-          <label for="photo-setting2" class="photo-form__settings-item photo-posting__settings-item--option2"></label>
-          <label for="photo-setting3" class="photo-form__settings-item photo-posting__settings-item--option3"></label>
+          <div class="photo-form__item-wrapper">
+            <label for="photo-setting1" class="photo-form__settings-item photo-form__settings-item--option1"></label>
+            <input type="range" class="photo-form__item-range" name="option1-range">
+          </div>
+          <div class="photo-form__item-wrapper">
+            <label for="photo-setting2" class="photo-form__settings-item photo-form__settings-item--option2"></label>
+            <input type="range" class="photo-form__item-range" name="option2-range">
+          </div>
+          <div class="photo-form__item-wrapper">
+            <label for="photo-setting3" class="photo-form__settings-item photo-form__settings-item--option3"></label>
+            <input type="range" class="photo-form__item-range" name="option3-range">
+          </div>
         </div>
         <input type="range" class="photo-form__settings-range" name="settings-range">
       </div>
       <div class="photo-form__buttons-block">
-        <button type="submit" class="photo-form__btn photo-posting__btn--send">Запостить</button>
-        <button type="reset" class="photo-form__btn photo-posting__btn--cancel" disabled="">Отмена</button>
+        <button type="submit" class="photo-form__btn photo-form__btn--send">Запостить</button>
+        <button type="reset" class="photo-form__btn photo-form__btn--cancel" disabled="">Отмена</button>
       </div>
     </form>
   </main>

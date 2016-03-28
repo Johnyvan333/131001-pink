@@ -1,3 +1,296 @@
 .promo-block {
-  outline: 2px solid green;
+  padding-top: 16px;
+  min-height: 700px;
+
+  text-align: center;
+
+
+  &__header {
+    width: 205px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+  }
+
+  &__header-text {
+    color: #283645;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 1.2em;
+    text-align: center;
+  }
+
+  &__header-text:first-of-type {
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 284px;
+
+    background: url(../img/iphone-screen-mobile.png) 50% 110% no-repeat #f2f2f2;
+  }
+
+  &__description::before {
+    position: absolute;
+    content: '';
+    height: 35px;
+    width: 100%;
+    top: -35px;
+    left: 0;
+    z-index: 5;
+
+
+    background-image: linear-gradient(
+      to bottom right,
+      transparent 50%,
+      #f2f2f2 50%
+    );
+  }
+
+  &__thesis-wrapper {
+    width: 275px;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+   &__thesis-header {
+     display: block;
+
+     font-size: 18px;
+     font-weight: 700;
+     line-height: 1.2em;
+  }
+
+   &__thesis-info {
+     margin-bottom: 32px;
+
+     color: #283645;
+     font-size: 14px;
+     line-height: 24px;
+  }
+
+   &__science-block {
+     display: none;
+  }
+}
+
+
+@media @tablet-widths {
+  .promo-block {
+    min-height: 1000px;
+    padding-top: 60px;
+
+
+    &__header {
+      width: 600px;
+      margin-bottom: 100px;
+    }
+
+    &__header-text {
+      width: 350px;
+      margin: 0 auto;
+
+      font-size: 40px;
+      line-height: 1.2em;
+    }
+
+    &__header-text:first-of-type {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    &__description {
+      width: 100%;
+      padding-bottom: 24px;
+
+      text-align: right;
+
+      background-image: none;
+    }
+
+    &__description::before {
+      height: 55px;
+      top: -55px;
+    }
+
+    &__description::after {
+      position: absolute;
+      content: '';
+      height: 500px;
+      width: 300px;
+
+      top: -31px;
+      left: 40px;
+      z-index: 10;
+
+      background: url(../img/iphone-screen-tablet.png) 0 20px no-repeat;
+    }
+
+    &__thesis-wrapper {
+      width: 310px;
+      margin: 0;
+      margin-left: 350px;
+
+      text-align: left;
+    }
+
+    &__science-block {
+      display: block;
+
+      background: url(../img/24-hours-tablet.png) no-repeat 40px 100%;
+    }
+
+    &__science-block-wrapper {
+      float: right;
+      width: 310px;
+      margin-right: 40px;
+      padding: 0;
+      padding-top: 103px;
+    }
+
+    &__science-header {
+      display: block;
+      width: 170px;
+      margin-bottom: 14px;
+
+      text-align: left;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 36px;
+    }
+
+    &__science-info {
+      width: 300px;
+      margin-bottom: 14px;
+
+      color: #283645;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: left;
+    }
+
+    &__science-ref {
+      display: block;
+      color: #dd5d80;
+
+      padding-bottom: 25px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .promo-block {
+    min-height: 1250px;
+
+
+    &__header {
+      width: 750px;
+      margin-bottom: 175px;
+    }
+
+    &__header-text {
+      width: 420px;
+
+      line-height: 60px;
+      font-size: 50px;
+    }
+
+    &__header-text:first-of-type {
+      width: 750px;
+    }
+
+    &__description {
+      padding: 0;
+
+      text-align: center;
+    }
+
+    &__description::before {
+      height: 95px;
+      top: -95px;
+    }
+
+    &__description::after {
+      display: none;
+    }
+
+    &__thesis-wrapper {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 245px;
+
+      margin: 0;
+      margin-right: 87px;
+      padding: 0;
+      padding-top: 270px;
+
+      text-align: center;
+    }
+
+    &__thesis-wrapper:last-of-type {
+      margin-right: 0;
+    }
+
+    &__thesis-wrapper::before {
+      position: absolute;
+      content: '';
+      height: 355px;
+      width: 300px;
+
+      top: -140px;
+      left: -30px;
+      z-index: 15;
+
+      background: url(../img/science-shadow-tablet.png) 0 102% no-repeat, url(../img/iphone-science-1-tablet.png) 50% 20px no-repeat;
+    }
+
+    &__thesis-wrapper:nth-of-type(2)::before {
+      background: url(../img/science-shadow-tablet.png) 0 102% no-repeat, url(../img/iphone-science-2-tablet.png)  50% 20px no-repeat;
+    }
+
+    &__thesis-wrapper:nth-of-type(3)::before {
+      background: url(../img/science-shadow-tablet.png) 0 102% no-repeat, url(../img/iphone-science-3-tablet.png)  50% 20px no-repeat;
+    }
+
+    &__thesis-header {
+      font-size: 30px;
+      line-height: 1em;
+      font-weight: 700;
+    }
+
+    &__thesis-info {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &__science-block {
+      display: block;
+      padding-right: 130px;
+      padding-bottom: 100px;
+
+      background-color: #f2f2f2;
+      background: url(../img/24-hours-desktop.png) no-repeat 130px 20px #f2f2f2;
+    }
+
+    &__science-block-wrapper {
+      float: right;
+
+      width: 525px;
+      text-align: left;
+    }
+
+    &__science-header {
+      width: 300px;
+    }
+
+    &__science-info {
+      width: 100%;
+      margin-bottom: 20px;
+
+      font-size: 18px;
+    }
+  }
 }

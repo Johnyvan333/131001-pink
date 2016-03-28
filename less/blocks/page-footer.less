@@ -1,3 +1,124 @@
 .page-footer {
-  outline: 2px solid green;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 35px;
+
+  text-align: center;
+
+
+  &--index {
+    display: none;
+  }
+
+  &__developer-info {
+    width: 130px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    line-height: 51px;
+    text-align: left;
+  }
+
+  &__developer-ref {
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 34px;
+    margin-left: 14px;
+
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+
+    background: url("../img/logo-htmlacademy.svg") 50% 50% no-repeat;
+  }
+}
+
+
+.glasses-logo {
+  margin-bottom: 35px;
+}
+
+.glasses-logo__ref {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: 0 auto;
+
+  font-size: 0;
+  background: url("../img/logo-pink-blue-mobile.svg") 50% 50% no-repeat;
+}
+
+.social-block {
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+.social-block-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 45px;
+  height: 45px;
+  margin-right: 8px;
+
+  font-size: 0;
+  line-height: 0;
+
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+
+
+  &--twitter {
+    background: url("../img/icon-twitter.svg") 50% 50% no-repeat;
+  }
+
+  &--facebook {
+    background: url("../img/icon-facebook.svg") 50% 50% no-repeat;
+  }
+
+  &--youtube {
+    background: url("../img/icon-youtube.svg") 50% 50% no-repeat;
+  }
+}
+
+.social-block-item:last-of-type {
+  margin-right: 0;
+}
+
+
+
+
+@media @tablet-widths {
+  .page-footer {
+    width: 620px;
+    margin-top: 60px;
+
+    &--index {
+      display: block;
+      }
+
+    &__developer-info {
+      float: right;
+
+      text-align: right;
+    }
+  }
+
+  .glasses-logo {
+    float: left;
+    width: 150px;
+  }
+
+  .social-block {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+
+@media @desktop-widths {
+  .page-footer {
+    width: 940px;
+    margin: 72px auto;
+  }
 }

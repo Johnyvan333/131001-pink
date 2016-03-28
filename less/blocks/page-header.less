@@ -1,3 +1,280 @@
 .page-header {
-  outline: 2px solid green;
+  position: relative;
+  height: 237px;
+  width: 320px;
+  margin: 0 auto;
+
+  color: white;
+
+  background: url("../img/bg-back-mobile.jpg") no-repeat 50% 0 #2b3b4b;
+
+
+  &--index {
+    height: 729px;
+    background: url("../img/iphone-hand-mobile.png") no-repeat 0% 172px, url("../img/bg-back-mobile.jpg") no-repeat 50% -5px #2b3b4b;
+  }
+
+  &__promo {
+    display: none;
+  }
+
+  &__info {
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 31px;
+
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.22em;
+    font-weight: 100;
+  }
+}
+
+
+
+.top-panel {
+  height: 66px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.top-panel__toogle {
+  float: right;
+  width: 50px;
+  margin-right: 20px;
+  margin-top: 21px;
+
+  cursor: pointer;
+
+  text-align: center;
+}
+
+.top-panel__toogle::before,
+.top-panel__toogle::after {
+  content: '';
+}
+
+.top-panel__toogle-icon,
+.top-panel__toogle::before,
+.top-panel__toogle::after {
+  display: block;
+  height: 4px;
+  width: 50px;
+  margin-bottom: 6px;
+  font-size: 0;
+  line-height: 0;
+
+  background: white;
+}
+
+
+.text-logo {
+  position: absolute;
+  display: block;
+  left: 18px;
+  top: 18px;
+
+  width: 80px;
+  height: 30px;
+  z-index: 5;
+
+  font-size: 0;
+  background: url("../img/logo-pink-white-mobile.svg") 50% 50% no-repeat;
+}
+
+.main-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.main-menu--hidden {
+  display: none;
+}
+
+.main-menu__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-menu__ref {
+  display: block;
+  line-height: 32px;
+  padding: 15px 0;
+
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+
+  background: #283645;
+  border-top: 1px solid #495562;
+  border-bottom: 1px solid #030303;
+}
+
+.main-menu__ref--close {
+  position: relative;
+  font-size: 0;
+  border-top: none;
+}
+
+.main-menu__ref--close::after,
+.main-menu__ref--close::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 32px;
+
+  height: 30px;
+  width: 4px;
+  cursor: pointer;
+
+  background: white;
+
+  transform: rotate(45deg);
+}
+
+.main-menu__ref--close::before {
+  transform: rotate(-45deg);
+}
+
+
+
+
+@media @tablet-widths {
+  .page-header {
+    width: 700px;
+    height: 440px;
+    background: url("../img/bg-back-tablet.jpg") no-repeat 50% 0 #2b3b4b;
+
+    &--index {
+      height: 730px;
+
+      background: url("../img/iphone-hand-tablet.png") no-repeat 50% 100%, url("../../img/bg-back-tablet.jpg") no-repeat 50% 0 #2b3b4b;
+    }
+
+    &__promo {
+      display: block;
+      width: 195px;
+      margin-left: 95px;
+      margin-top: 85px;
+
+      text-align: center;
+      font-size: 40px;
+      font-weight: 100;
+      line-height: 1.3em;
+    }
+
+    &__info {
+      margin-top: 70px;
+      width: 475px;
+
+      font-size: 50px;
+    }
+  }
+
+
+  .top-panel {
+    height: 110px;
+  }
+
+  .top-panel__toogle {
+    margin-top: 40px;
+    margin-right: 40px;
+  }
+
+
+  .text-logo {
+    top: 25px;
+    left: 40px;
+
+    width: 150px;
+    height: 45px;
+
+    background: url("../img/logotype-white-tablet.png") 50% 50% no-repeat;
+  }
+
+  .main-menu__ref--close {
+    height: 80px;
+  }
+
+  .main-menu__ref--close::after,
+  .main-menu__ref--close::before {
+    top: 40px;
+    right: 55px;
+  }
+}
+
+@media @desktop-widths {
+  .page-header {
+    width: 1200px;
+    height: 394px;
+    background:  url("../img/bg-back-desktop.jpg") no-repeat 50% 0 #2b3b4b;
+
+    &--index {
+      height: 852px;
+
+      background: url("../img/iphone-hand-desktop.png") no-repeat 100% 100%, url("../../img/bg-back-desktop.jpg") no-repeat 50% 0 #2b3b4b;
+    }
+
+    &__promo {
+      display: block;
+      width: 245px;
+      height: 210px;
+      margin-left: 160px;
+      margin-top: 110px;
+    }
+
+    &__info {
+      width: 750px;
+      margin-top: 65px;
+    }
+
+    &__info--photo {
+      width: 500px;
+    }
+  }
+
+  .text-logo {
+    left: 130px;
+  }
+
+  .top-panel__toogle {
+    display: none;
+  }
+
+  .main-menu {
+    position: static;
+    float: right;
+    max-width: 700px;
+    margin-right: 100px;
+
+    &--hidden {
+      display: block;
+    }
+
+    &__item {
+      display: inline-block;
+      vertical-align: middle;
+      width: 170px;
+    }
+
+    &__ref {
+      line-height: 110px;
+      padding: 0;
+
+      font-size: 18px;
+      text-transform: capitalize;
+      font-weight: normal;
+      background-color: inherit;
+      border: none;
+    }
+
+    &__ref--close {
+      display: none;
+    }
+  }
 }

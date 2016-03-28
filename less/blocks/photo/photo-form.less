@@ -1,3 +1,251 @@
 .photo-form {
-  outline: 2px solid green;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 20px;
+
+  background: #f2f2f2;
+
+  &__photo-wrapper {
+  width: 280px;
+  height: 374px;
+  margin-bottom: 40px;
+  }
+
+  &__photo {
+    background: url(../img/photo-7-mobile.jpg) 50% 50% no-repeat gray;
+    width: 280px;
+    height: 374px;
+  }
+
+  &__settings-block {
+    text-align: center;
+  }
+
+  &__settings-input {
+    display: none;
+  }
+
+  &__settings-choice {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+
+    padding: 0 20px;
+
+    margin-bottom: 24px;
+  }
+
+  &__settings-item {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+  }
+
+  &__settings-item--option1 {
+    background: url(../img/icon-editor-crop.svg) 50% 50% no-repeat;
+  }
+
+  &__settings-item--option2 {
+    background: url(../img/icon-editor-fill.svg) 50% 50% no-repeat;
+  }
+
+  &__settings-item--option3 {
+    background: url(../img/icon-editor-contrast.svg) 50% 50% no-repeat;
+  }
+
+  &__settings-range {
+    width: 240px;
+    margin-bottom: 34px;
+  }
+
+  &__item-range {
+    display: none;
+  }
+
+
+
+  &__buttons-block {
+    padding: 29px 0;
+  }
+
+  &__btn {
+    width: 280px;
+    height: 55px;
+    margin-bottom: 12px;
+
+    color: #d22856;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1em;
+
+    background: transparent;
+    border: 3px solid #d22856;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  &__btn--cancel {
+    color: #e3e4e4;
+    border-color: #dddfe0;
+  }
+}
+
+
+@media @tablet-widths {
+  .photo-form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;;
+
+    width: 620px;
+    height: 410px;
+
+    margin: 0 auto;
+    padding: 0 40px;
+    padding-top: 43px;
+    padding-bottom: 55px;
+
+    &__photo-wrapper {
+      width: 300px;
+      height: 400px;
+      margin-top: 14px;
+    }
+
+    &__photo {
+      background: url(../img/photo-7-tablet.jpg) 50% 50% no-repeat gray;
+      width: 300px;
+      height: 400px;
+    }
+
+
+    &__settings-block {
+      width: 275px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: 16px;
+    }
+
+    &__settings-choice {
+      flex-direction: column;
+    }
+
+    &__settings-item {
+      width: 25px;
+      height: 25px;
+      margin-right: auto;
+
+      align-self: center;
+
+      background-size: contain;
+      background-position: center;
+    }
+
+    &__item-range {
+      display: inline;
+      width: 203px;
+      margin-right: 12px;
+    }
+
+    &__item-wrapper {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: center;
+      align-self: flex-start;
+
+      width: 265px;
+      height: 70px;
+
+      border-bottom: 1px solid #dddfe0;
+    }
+
+    &__settings-range {
+      display: none;
+    }
+
+    &__buttons-block {
+      width: 275px;
+      margin: 0;
+      margin-left: auto;
+      margin-top: auto;
+
+      padding-bottom: 0;
+
+      text-align: left;
+    }
+
+    &__btn {
+      width: 260px;
+      margin-bottom: 20px;
+    }
+
+    &__btn--cancel {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+@media @desktop-widths {
+  .photo-form {
+    width: 799px;
+    height: 414px;
+
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 61px;
+    padding-top: 43px;
+
+    &__photo-wrapper {
+      width: 300px;
+      height: 400px;
+    }
+
+    &__settings-block {
+      width: 414px;
+      height: 200px;
+    }
+
+    &__settings-item {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__item-wrapper {
+      width: 410px;
+    }
+
+    &__item-range {
+      width: 287px;
+      margin-right: 30px;
+    }
+
+    &__buttons-block {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: space-between;
+
+      width: 410px;
+    }
+
+    &__btn {
+      width: 184px;
+      margin: 0;
+    }
+  }
 }
