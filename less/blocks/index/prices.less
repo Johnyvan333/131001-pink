@@ -1,7 +1,7 @@
 .prices {
   position: relative;
-  padding-top: 68px;
-  padding-bottom: 35px;
+  padding-top: 65px;
+  padding-bottom: 51px;
 
   overflow: hidden;
 
@@ -9,16 +9,15 @@
 
 
   &__table {
-    width: 900px;
-    margin-bottom: 40px;
-    margin-left: -290px;
+    width: 840px;
+    margin-bottom: 44px;
 
     background: white;
     border-collapse: collapse;
   }
 
   &__table-header {
-    text-align: center;
+    position: relative;
     height: 98px;
 
     color: white;
@@ -33,6 +32,18 @@
     border-bottom: none;
   }
 
+  &__table-header:nth-of-type(2) {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-left: none;
+  }
+
+  &__table-header:nth-of-type(4) {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-right: none;
+  }
+
   &__table-header--hidden {
     display: none;
   }
@@ -45,9 +56,38 @@
     line-height: 30px;
   }
 
+  &__table-header-hit {
+    position: absolute;
+    top: 0;
+    left: -2px;
+
+    width: 73px;
+    height: 73px;
+    overflow: hidden;
+
+    font-size: 0;
+  }
+
+  &__table-header-hit::after {
+    position: absolute;
+    top: 12px;
+    left: -50px;
+    transform: rotate(-45deg);
+
+    width: 150px;
+
+    content: 'хит';
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+
+    background: #d22856;
+  }
+
   &__table-item {
-    height: 50px;
-    padding-left: 24px;
+    height: 56px;
+    padding-left: 22px;
 
     font-size: 14px;
     text-transform: uppercase;
@@ -61,11 +101,11 @@
   }
 
   &__table-item--included {
-    background: url(../img/icon-yes.svg) 90% 50% no-repeat;
+    background: url(../img/icon-yes.svg) 92% 50% no-repeat;
   }
 
   &__table-item--not-included {
-    background: url(../img/icon-no.svg) 90% 50% no-repeat;
+    background: url(../img/icon-no.svg) 92% 50% no-repeat;
   }
 }
 
@@ -74,27 +114,17 @@
   .prices {
     width: 620px;
     margin: 0 auto;
-    padding: 70px 40px;
+    padding: 0 40px;
+    padding-top: 35px;
+    padding-bottom: 23px;
 
     &__table {
       width: 100%;
-      margin: 0;
     }
 
     &__table-header {
+      height: 77px;
       font-size: 18px;
-    }
-
-    &__table-header:nth-of-type(2) {
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-      border-left: none;
-    }
-
-    &__table-header:nth-of-type(4) {
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-      border-right: none;
     }
 
     &__table-header-bold {
@@ -109,9 +139,27 @@
       border: none;
     }
 
+    &__table-header-hit::after {
+      position: absolute;
+      top: 5px;
+      left: -52px;
+      transform: rotate(-45deg);
+
+      width: 150px;
+
+      content: 'хит';
+      font-size: 14px;
+      line-height: 30px;
+      text-transform: uppercase;
+      text-align: center;
+
+      background: #d22856;
+    }
+
     &__table-item {
       font-size: 0;
       width: 25%;
+      height: 44px;
 
       background-position: 50% 50%;
     }

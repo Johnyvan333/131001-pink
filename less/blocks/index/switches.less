@@ -1,15 +1,88 @@
 .switches {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+
+  width: 56px;
+  margin: 0 auto;
+
+
+  &__input {
+    display: none;
+  }
+
+  &__item {
+    width: 6px;
+    height: 6px;
+
+    cursor: pointer;
+
+    background: #b5b9be;
+    border-radius: 50%;
+  }
 }
+
+
+#review1:checked ~ .reviews__item--1 {display: block;}
+
+#review2:checked ~ .reviews__item--2 {display: block;}
+
+#review3:checked ~ .reviews__item--3 {display: block;}
+
+#review1:checked ~ .switches .switches__item[for="review1"] {
+  background: white;
+  box-shadow: 0 0 0 3px #283645;
+}
+
+#review2:checked ~ .switches .switches__item[for="review2"] {
+  background: white;
+  box-shadow: 0 0 0 3px #283645;
+}
+
+#review3:checked ~ .switches .switches__item[for="review3"] {
+  background: white;
+  box-shadow: 0 0 0 3px #283645;
+}
+
+
+
+#price1:checked ~ .prices__table {transform: translateX(21px);}
+
+#price2:checked ~ .prices__table {transform: translateX(-259px);}
+
+#price3:checked ~ .prices__table {transform: translateX(-539px);}
+
+
+#price1:checked ~ .switches .switches__item[for="price1"] {
+  background: white;
+  box-shadow: 0 0 0 3px #283645;
+}
+
+#price2:checked ~ .switches .switches__item[for="price2"] {
+  background: white;
+  box-shadow: 0 0 0 3px #283645;
+}
+
+#price3:checked ~ .switches .switches__item[for="price3"] {
+  background: white;
+  box-shadow: 0 0 0 3px #283645;
+}
+
 
 @media @tablet-widths {
   .switches--prices {
     display: none;
   }
+
+  #price1:checked ~ .prices__table {transform: translateX(0);}
+
+  #price2:checked ~ .prices__table {transform: translateX(0);}
+
+  #price3:checked ~ .prices__table {transform: translateX(0);}
 }
+
 
 @media @desktop-widths {
  .switches {
    display: none;
- }
+  }
 }
