@@ -15,6 +15,7 @@
     margin: 0 auto;
     margin-bottom: 40px;
 
+    color: #283645;
     line-height: 51px;
     text-align: left;
   }
@@ -91,7 +92,7 @@
 @media @tablet-widths {
   .page-footer {
     width: 620px;
-    margin-top: 60px;
+    margin-top: 35px;
 
     &--index {
       display: block;
@@ -99,6 +100,7 @@
 
     &__developer-info {
       float: right;
+      margin-top: 8px;
 
       text-align: right;
     }
@@ -112,6 +114,8 @@
   .social-block {
     display: inline-block;
     vertical-align: top;
+    margin-top: 7px;
+    margin-right: 17px;
   }
 }
 
@@ -119,6 +123,21 @@
 @media @desktop-widths {
   .page-footer {
     width: 940px;
-    margin: 72px auto;
+    margin-top: 8px;
+
+    &__developer-info {
+      width: 170px;
+
+      font-size: 18px;
+    }
+  }
+
+  .glasses-logo__ref {
+    background: url("../img/logotype-blue-desktop.svg") 50% 50% no-repeat;
+  }
+
+  .social-block {
+    margin-right: 0;
+    margin-left: 28px;
   }
 }

@@ -175,6 +175,10 @@
 
       border-top: 2px solid #e5e5e5;
     }
+
+    &__table-header--full-hidden {
+      font-size: 0;
+    }
   }
 }
 
@@ -182,6 +186,30 @@
 @media @desktop-widths {
   .prices {
     width: 940px;
-    padding: 100px 130px;
+    padding: 0 130px;
+    padding-top: 68px;
+    padding-bottom: 50px;
+
+
+    &__table-header {
+      height: 95px;
+
+      font-size: 24px;
+    }
+
+    &__table-header-bold {
+      font-size: 18px;
+    }
+
+    &__table-item--hidden {
+      height: 57px;
+      padding-left: 22px;
+
+      font-size: 18px;
+    }
+
+    &__table-header--full-hidden {
+      font-size: 0;
+    }
   }
 }

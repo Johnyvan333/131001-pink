@@ -1,15 +1,16 @@
 .user-form {
-  width: 280px;
-  margin: 0 auto;
+  width: 320px;
 
 
   &__name-block {
-    padding-bottom: 23px;
+    padding: 0 20px;
+    padding-bottom: 27px;
   }
 
   &__promo {
-    padding-top: 50px;
-    padding-bottom: 45px;
+    padding: 0 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 
     color: #283645;
     font-size: 14px;
@@ -23,7 +24,7 @@
 
   &__name-title {
     display: block;
-    padding-left: 22px;
+    padding-left: 23px;
     padding-bottom: 6px;
 
     color: #d22856;
@@ -33,9 +34,13 @@
   }
 
   &__name-input {
-    padding: 14px;
+    padding-left: 21px;
+    padding-right: 8px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+
     width: 248px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     color: #283645;
     font-size: 18px;
@@ -43,6 +48,10 @@
 
     border: 2px solid #e5e5e5;
     outline: none;
+  }
+
+  &__name-item-wrapper:nth-of-type(2) {
+    margin-bottom: 4px;
   }
 
   &__name-input::placeholder {
@@ -55,8 +64,8 @@
 
 
   &__achievments-block {
-    padding-top: 39px;
-    padding-bottom: 49px;
+    padding-top: 35px;
+    padding-bottom: 6px;
 
     background: #f2f2f2;
   }
@@ -80,6 +89,7 @@
   &__achievments-title {
     display: block;
     margin-bottom: 43px;
+    margin-left: 20px;
 
     color: #283645;
     font-size: 18px;
@@ -106,8 +116,9 @@
 
 
   &__contacts-block {
-    padding-top: 50px;
-    padding-bottom: 34px;
+    padding: 0 20px;
+    padding-top: 28px;
+    padding-bottom: 39px;
   }
 
   &__contacts-header {
@@ -127,9 +138,13 @@
   }
 
   &__contacts-input {
-    padding: 14px;
+    padding-left: 21px;
+    padding-right: 8px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+
     width: 248px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     color: #283645;
     font-size: 18px;
@@ -149,8 +164,9 @@
 
 
   &__application-block {
-    padding-top: 39px;
-    padding-bottom: 4px;
+    padding: 0 20px;
+    padding-top: 36px;
+    padding-bottom: 6px;
 
     background: #f2f2f2;
   }
@@ -158,7 +174,7 @@
   &__application-promo {
     width: 220px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     color: #d22856;
     font-size: 14px;
@@ -173,7 +189,7 @@
 
   &__application-title {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
 
     color: #283645;
     font-size: 18px;
@@ -208,12 +224,13 @@
 
 
   &__review-block {
-    padding-top: 54px;
-    padding-bottom: 47px;
+    padding: 0 20px;
+    padding-top: 37px;
+    padding-bottom: 43px;
   }
 
   &__review-promo {
-    margin-bottom: 14px;
+    margin-bottom: 11px;
 
     color: #d22856;
     font-size: 14px;
@@ -223,10 +240,11 @@
   }
 
   &__review-textarea {
-    width: 248px;
-    height: 165px;
-    padding: 16px 14px;
+    width: 239px;
+    height: 167px;
+    padding: 15px 19px;
 
+    font-family: "Open Sans", Arial, sans-serif;
     color: #283645;
     font-size: 18px;
     line-height: 30px;
@@ -245,14 +263,16 @@
 
 
   &__submit {
-    width: 100%;
-    margin-bottom: 36px;
+    width: 280px;
+    margin-left: 20px;
+
+    margin-bottom: 34px;
     padding: 17px;
 
     color: white;
     font-size: 18px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 29px;
     text-transform: uppercase;
 
     background-color: #2aab6d;
@@ -283,10 +303,6 @@
 
 @media @tablet-widths {
   .user-form {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: column;
     .container;
@@ -297,8 +313,8 @@
 
       width: 500px;
       margin: 0 auto;
-      padding-top: 100px;
-      padding-bottom: 80px;
+      padding-top: 93px;
+      padding-bottom: 72px;
 
       color: #283645;
       font-size: 18px;
@@ -311,13 +327,14 @@
 
     &__name-block {
      order: 1;
+     padding: 0;
+    }
+
+    &__name-wrapper {
+      padding-bottom: 12px;
     }
 
     &__name-item-wrapper {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
       align-items: baseline;
     }
@@ -340,9 +357,9 @@
       margin-bottom: 64px;
 
       padding: 0;
-      padding-top: 52px;
-      padding-left: 60px;
-      padding-bottom: 5px;
+      padding-top: 53px;
+      padding-left: 40px;
+      padding-bottom: 3px;
 
       text-align: left;
 
@@ -368,15 +385,25 @@
       background-color: white;
     }
 
+    &__achievments-title {
+      margin-bottom: 44px;
+    }
+
+    &__achievments-title::before {
+      margin-right: 20px;
+    }
+
 
     &__contacts-block {
       order: 3;
       position: relative;
 
       margin: 0;
-      margin-bottom: 65px;
+      margin-bottom: 66px;
       padding: 0;
-      padding-top: 45px;
+      padding-top: 46px;
+      padding-left: 60px;
+      padding-bottom: 0;
 
       text-align: center;
 
@@ -402,31 +429,33 @@
     }
 
     &__contacts-item-wrapper {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
       flex-direction: column;
     }
 
     &__contacts-title {
-     order: 2;
-     align-self: flex-start;
-     padding: 0;
-     margin-left: 80px;
-     margin-top: 12px;
-     margin-bottom: 31px;
+      order: 2;
+      align-self: flex-start;
+      padding: 0;
+      margin: 0;
+      margin-left: 18px;
+      margin-bottom: 31px;
     }
 
-    &__contacts-title-hidden {
+    &__contacts-item-wrapper:last-of-type {
+      margin-bottom: -5px;
+    }
+
+    &__contacts-title-hidden,
+    &__contacts-tablet-hidden {
       display: none;
     }
 
     &__contacts-input {
       order: 1;
-      width: 496px;
-      margin: 0 auto;
+      width: 467px;
+      margin: 0;
+      margin-bottom: 10px;
     }
 
     &__contacts-input[type="tel"] {
@@ -445,7 +474,8 @@
       margin-bottom: 65px;
       padding: 0;
       padding-left: 60px;
-      padding-top: 50px;
+      padding-top: 54px;
+      padding-bottom: 19px;
 
       background-color: transparent;
       border: 2px solid #e5e5e5;
@@ -464,16 +494,20 @@
       background-color: white;
     }
 
+    &__application-title:before {
+      margin-right: 21px;
+    }
+
 
     &__review-block {
       order: 5;
       position: relative;
 
-      margin-bottom: 68px;
+      margin-bottom: 67px;
 
       padding: 0;
       padding-top: 45px;
-      padding-bottom: 50px;
+      padding-bottom: 47px;
 
       text-align: center;
 
@@ -488,15 +522,15 @@
       left: 50%;
       transform: translate(-50%);
 
-      padding: 0 30px;
+      padding: 0 38px;
       margin: 0;
 
       background-color: white;
     }
 
     &__review-textarea {
-      width: 468px;
-      height: 154px;
+      width: 458px;
+      height: 161px;
     }
 
 
@@ -527,7 +561,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;;
+    align-items: flex-start;
 
     .container;
     padding: 0;
@@ -545,6 +579,7 @@
 
     &__name-block {
       padding: 0;
+      margin-top: 12px;
       width: 436px;
     }
 
@@ -555,7 +590,15 @@
 
     &__application-block {
       margin: 0;
+      margin-top: 5px;
+      padding: 0;
+      padding-top: 56px;
+      padding-left: 75px;
+      padding-right: 20px;
+      padding-bottom: 15px;
+
       width: 335px;
+
     }
 
     &__application-promo {
@@ -566,22 +609,17 @@
 
 
     &__contacts-block {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
       justify-content: space-between;
 
       width: 816px;
-
       margin: 0;
       margin-bottom: 64px;
-      margin-top: 66px;
+      margin-top: 50px;
 
-      padding: 60px;
-      padding-top: 50px;
-      padding-bottom: 0;
+      padding: 59px;
+      padding-top: 42px;
+      padding-bottom: 13px;
     }
 
     &__contacts-item-wrapper:last-of-type {
@@ -589,7 +627,9 @@
     }
 
     &__contacts-title {
-      margin: 20px;
+      margin: 0;
+      margin-top: 10px;
+      margin-left: 20px;
     }
 
     &__contacts-title-hidden {
@@ -597,7 +637,8 @@
     }
 
     &__contacts-input {
-      width: 345px;
+      width: 340px;
+      margin: 0;
     }
 
 
@@ -605,31 +646,27 @@
     &__achievments-block {
       width: auto;
       margin: 0;
-      margin-bottom: 68px;
+      margin-bottom: 65px;
 
-      padding: 50px 60px;
       padding-right: 0;
-      padding-bottom: 15px;
+      padding-bottom: 12px;
+      padding-left: 59px;
     }
 
     &__achievments-wrapper {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
 
-      width: auto;
+      width: 100%;
     }
 
     &__achievments-title {
       padding: 0;
       margin: 0;
-      margin-bottom: 41px;
+      margin-bottom: 43px;
 
-      min-width: 270px;
-      flex-grow: 1;
+      min-width: 255px;
     }
 
     &__achievments-title:nth-of-type(1) {
@@ -661,13 +698,19 @@
 
     &__review-block {
       width: 816px;
-      padding: 44px 60px;
+      padding-top: 42px;
+      padding-left: 58px;
+      padding-right: 62px;
+      padding-bottom: 39px;
+
+      margin-bottom: 65px;
+
       text-align: center;
     }
 
     &__review-textarea {
-      width: 792px;
-      height: 90px;
+      width: 778px;
+      height: 94px;
     }
 
     &__submit-block {
