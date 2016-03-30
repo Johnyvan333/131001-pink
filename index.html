@@ -13,12 +13,12 @@
       <div class="top-panel__toogle">
         <span class="top-panel__toogle-icon">toogle</span>
       </div>
-      <nav class="main-menu main-menu--hidden">
+      <nav class="main-menu main-menu--ope">
         <ul class="main-menu__items">
           <li class="main-menu__ref main-menu__ref--close">закрыть</li>
           <li class="main-menu__item"><a class="main-menu__ref">главная</a></li>
           <li class="main-menu__item"><a class="main-menu__ref" href="photo.html">фотографии</a></li>
-          <li class="main-menu__item"><a class="main-menu__ref" href="form.html">конкурсы</a></li>
+          <li class="main-menu__item"><a class="main-menu__ref" href="form.html">конкурс</a></li>
           <li class="main-menu__item"><a class="main-menu__ref" href="#">html academy</a></li>
         </ul>
       </nav>
@@ -54,46 +54,47 @@
           <p class="promo-block__thesis-info">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
       </div>
-      <div class="promo-block__science-block clearfix">
+      <div class="promo-block__science-block">
         <div class="promo-block__science-block-wrapper">
-          <b class="promo-block__science-header">Эффект на 24 часа!</b>
-          <p class="promo-block__science-info">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <b class="promo-block__science-header"><span class="">Эффект</span> на 24 часа!</b>
+          <p class="promo-block__science-info">Британские ученые провели исследования<span> и доказали, что положительный эффект от использования приложения длится целые сутки!</span></p>
           <a class="promo-block__science-info promo-block__science-ref" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
     </div>
     <div class="reviews">
+      <input class="switches__input" type="radio" name="review-switch" value="review1" id="review1" checked>
+      <input class="switches__input" type="radio" name="review-switch" value="review2" id="review2">
+      <input class="switches__input" type="radio" name="review-switch" value="review3" id="review3">
       <div class="reviews__toogle reviews__toogle-prev">предыдущий</div>
       <div class="reviews__toogle reviews__toogle-next">следующий</div>
-      <div class="reviews__item reviews__item--display">
+      <div class="reviews__item reviews__item--1">
         <b class="reviews__author-name">Николай Петров</b>
-        <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+        <p class="reviews__content"><span>&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>&raquo;</span></p>
       </div>
-      <div class="reviews__item">
-        <b class="reviews__author-name">Николай Петров</b>
-        <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      <div class="reviews__item reviews__item--2">
+        <b class="reviews__author-name">Николай Петров2</b>
+        <p class="reviews__content"><span>&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>&raquo;</span></p>
       </div>
-      <div class="reviews__item">
-        <b class="reviews__author-name">Николай Петров</b>
-        <p class="reviews__content">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+      <div class="reviews__item reviews__item--3">
+        <b class="reviews__author-name">Николай Петров3</b>
+        <p class="reviews__content"><span>&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>&raquo;</span></p>
       </div>
       <div class="switches">
-        <input class="switches__input" type="radio" name="review-switch" value="review1" id="review1" checked>
-        <input class="switches__input" type="radio" name="review-switch" value="review2" id="review2">
-        <input class="switches__input" type="radio" name="review-switch" value="review3" id="review3">
-        <div class="switches__items-wrapper">
-          <label class="switches__item" for="review1"></label>
-          <label class="switches__item" for="review2"></label>
-          <label class="switches__item" for="review3"></label>
-        </div>
+        <label class="switches__item" for="review1"></label>
+        <label class="switches__item" for="review2"></label>
+        <label class="switches__item" for="review3"></label>
       </div>
     </div>
     <div class="prices">
+      <input class="switches__input" type="radio" name="price-switch" value="price1" id="price1">
+      <input class="switches__input" type="radio" name="price-switch" value="price2" id="price2" checked>
+      <input class="switches__input" type="radio" name="price-switch" value="price3" id="price3">
       <table class="prices__table">
         <tr>
-          <th class="prices__table-header prices__table-header--hidden">скрытая ячейка</th>
+          <th class="prices__table-header prices__table-header--hidden prices__table-header--full-hidden ">скрытая ячейка</th>
           <th class="prices__table-header"><span class="prices__table-header-bold">база</span>1,99 usd</th>
-          <th class="prices__table-header prices__table-header--hit"><span class="prices__table-header-bold">стандарт</span>3,99 usd</th>
+          <th class="prices__table-header prices__table-header-hit"><span class="prices__table-header-bold">стандарт</span>3,99 usd</th>
           <th class="prices__table-header"><span class="prices__table-header-bold">анлим</span>9,99 usd</th>
         </tr>
         <tr>
@@ -116,30 +117,27 @@
         </tr>
       </table>
       <div class="switches switches--prices">
-        <input class="switches__input" type="radio" name="price-switch" value="price1" id="price1">
-        <input class="switches__input" type="radio" name="price-switch" value="price2" id="price2" checked>
-        <input class="switches__input" type="radio" name="price-switch" value="price3" id="price3">
-        <div class="switches__items-wrapper">
-          <label class="switches__item" for="price1"></label>
-          <label class="switches__item" for="price2"></label>
-          <label class="switches__item" for="price3"></label>
-        </div>
+        <label class="switches__item" for="price1"></label>
+        <label class="switches__item" for="price2"></label>
+        <label class="switches__item" for="price3"></label>
       </div>
     </div>
     <div class="contacts">
       <div class="contacts__wrapper">
         <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="contacts__item-wrapper">
-          <b class="contacts__item-header">Звоните:</b>
-          <span class="contacts__item">+7 (812) 555-66-66</span>
-        </div>
-        <div class="contacts__item-wrapper">
-          <b class="contacts__item-header">Пишите:</b>
-          <span class="contacts__item"><a href="mailto:mail@htmlacademy.ru" class="contacts__email">mail@htmlacademy.ru</a></span>
-        </div>
-        <div class="contacts__item-wrapper">
-          <b class="contacts__item-header">Приезжайте в гости:</b>
-          <span class="contacts__item">ул. Большая Конюшенная, 19/8</span>
+        <div class="contacts__items-container">
+          <div class="contacts__item-wrapper">
+            <b class="contacts__item-header">Звоните:</b>
+            <span class="contacts__item">+7 (812) 555-66-66</span>
+          </div>
+          <div class="contacts__item-wrapper">
+            <b class="contacts__item-header">Пишите:</b>
+            <span class="contacts__item"><a href="mailto:mail@htmlacademy.ru" class="contacts__email">mail@htmlacademy.ru</a></span>
+          </div>
+          <div class="contacts__item-wrapper">
+            <b class="contacts__item-header">Приезжайте в гости:</b>
+            <span class="contacts__item">ул. Большая Конюшенная, 19/8</span>
+          </div>
         </div>
       </div>
       <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6158097759605!2d30.322443!3d59.938517!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sru!4v1458643047686" frameborder="0" style="border:0" allowfullscreen></iframe></div>

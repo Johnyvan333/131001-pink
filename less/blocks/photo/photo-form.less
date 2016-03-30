@@ -1,4 +1,8 @@
 .photo-form {
+  .clearfix;
+  display: flex;
+  flex-direction: column;
+
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 20px;
@@ -26,10 +30,6 @@
   }
 
   &__settings-choice {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     justify-content: space-around;
 
@@ -61,6 +61,8 @@
   &__settings-range {
     width: 240px;
     margin-bottom: 34px;
+
+    cursor: pointer;
   }
 
   &__item-range {
@@ -87,6 +89,8 @@
     border: 3px solid #d22856;
     border-radius: 50px;
     outline: none;
+
+    cursor: pointer;
   }
 
   &__btn--cancel {
@@ -98,14 +102,9 @@
 
 @media @tablet-widths {
   .photo-form {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;;
+    justify-content: flex-start;
+    align-items: baseline;
 
     width: 620px;
     height: 410px;
@@ -154,13 +153,11 @@
       display: inline;
       width: 203px;
       margin-right: 12px;
+
+      cursor: pointer;
     }
 
     &__item-wrapper {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
       justify-content: center;
       align-self: flex-start;
@@ -204,6 +201,7 @@
     height: 414px;
 
     margin: 0 auto;
+    margin-bottom: 96px;
     padding-left: 80px;
     padding-right: 61px;
     padding-top: 43px;
@@ -233,10 +231,6 @@
     }
 
     &__buttons-block {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
       justify-content: space-between;
 

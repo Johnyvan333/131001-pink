@@ -15,6 +15,7 @@
     margin: 0 auto;
     margin-bottom: 40px;
 
+    color: #283645;
     line-height: 51px;
     text-align: left;
   }
@@ -46,7 +47,9 @@
   margin: 0 auto;
 
   font-size: 0;
-  background: url("../img/logo-pink-blue-mobile.svg") 50% 50% no-repeat;
+  background-image: url("../img/logo-pink-blue-mobile.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .social-block {
@@ -91,7 +94,7 @@
 @media @tablet-widths {
   .page-footer {
     width: 620px;
-    margin-top: 60px;
+    margin-top: 35px;
 
     &--index {
       display: block;
@@ -99,6 +102,7 @@
 
     &__developer-info {
       float: right;
+      margin-top: 8px;
 
       text-align: right;
     }
@@ -112,6 +116,8 @@
   .social-block {
     display: inline-block;
     vertical-align: top;
+    margin-top: 7px;
+    margin-right: 17px;
   }
 }
 
@@ -119,6 +125,20 @@
 @media @desktop-widths {
   .page-footer {
     width: 940px;
-    margin: 72px auto;
+
+    &__developer-info {
+      width: 170px;
+
+      font-size: 18px;
+    }
+  }
+
+  .glasses-logo__ref {
+    background-image: url("../img/logotype-blue-desktop.png");
+  }
+
+  .social-block {
+    margin-right: 0;
+    margin-left: 28px;
   }
 }
