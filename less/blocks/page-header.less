@@ -116,30 +116,42 @@
 }
 
 .main-menu__ref--close {
-  position: relative;
+  .clearfix;
   padding-top: 22px;
 
   font-size: 0;
   border-top: none;
 }
 
-.main-menu__ref--close::after,
-.main-menu__ref--close::before {
+.main-menu__close-icon {
+  float: right;
+  display: block;
+  position: relative;
+
+  width: 30px;
+  height: 30px;
+  margin-right: 25px;
+  margin-top: -5px;
+
+  cursor: pointer;
+}
+
+.main-menu__close-icon::after,
+.main-menu__close-icon::before {
   content: '';
   position: absolute;
-  top: 15px;
-  right: 32px;
+  top: 0;
+  left: 12px;
 
   height: 30px;
   width: 4px;
-  cursor: pointer;
 
   background: white;
 
   transform: rotate(45deg);
 }
 
-.main-menu__ref--close::before {
+.main-menu__close-icon::before {
   transform: rotate(-45deg);
 }
 
@@ -208,10 +220,9 @@
     padding-bottom: 7px;
   }
 
-  .main-menu__ref--close::after,
-  .main-menu__ref--close::before {
-    top: 40px;
-    right: 50px;
+  .main-menu__close-icon {
+    margin-top: 20px;
+    margin-right: 40px;
   }
 }
 
