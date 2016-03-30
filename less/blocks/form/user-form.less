@@ -4,7 +4,6 @@
 
   &__name-block {
     padding: 0 20px;
-    padding-bottom: 27px;
   }
 
   &__promo {
@@ -51,7 +50,7 @@
   }
 
   &__name-item-wrapper:nth-of-type(2) {
-    margin-bottom: 4px;
+    margin-bottom: 3px;
   }
 
   &__name-input::placeholder {
@@ -64,16 +63,20 @@
 
 
   &__achievments-block {
-    padding-top: 35px;
+    margin-top: -45px;
+    padding-top: 0px;
     padding-bottom: 6px;
 
     background: #f2f2f2;
+    border: none;
   }
 
   &__achievments-promo {
+    display: block;
     width: 220px;
     margin: 0 auto;
     margin-bottom: 40px;
+    padding-top: 108px;
 
     color: #d22856;
     font-size: 14px;
@@ -89,7 +92,7 @@
   &__achievments-title {
     display: block;
     margin-bottom: 43px;
-    margin-left: 20px;
+    margin-left: 8px;
 
     color: #283645;
     font-size: 18px;
@@ -116,9 +119,11 @@
 
 
   &__contacts-block {
-    padding: 0 20px;
+    padding: 0 19px;
     padding-top: 28px;
     padding-bottom: 39px;
+
+    border: none;
   }
 
   &__contacts-header {
@@ -127,7 +132,7 @@
 
   &__contacts-title {
     display: block;
-    padding-left: 23px;
+    padding-left: 21px;
     padding-bottom: 6px;
 
 
@@ -138,7 +143,7 @@
   }
 
   &__contacts-input {
-    padding-left: 21px;
+    padding-left: 19px;
     padding-right: 8px;
     padding-top: 15px;
     padding-bottom: 14px;
@@ -164,17 +169,19 @@
 
 
   &__application-block {
-    padding: 0 20px;
-    padding-top: 36px;
+    margin-top: -65px;
+    padding: 0 18px;
     padding-bottom: 6px;
 
     background: #f2f2f2;
+    border: none;
   }
 
   &__application-promo {
     width: 220px;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
+    padding-top: 100px;
 
     color: #d22856;
     font-size: 14px;
@@ -224,9 +231,11 @@
 
 
   &__review-block {
-    padding: 0 20px;
-    padding-top: 37px;
+    margin-top: 50px;
+    padding: 0 18px;
     padding-bottom: 43px;
+
+    border: none;
   }
 
   &__review-promo {
@@ -328,10 +337,7 @@
     &__name-block {
      order: 1;
      padding: 0;
-    }
-
-    &__name-wrapper {
-      padding-bottom: 12px;
+     padding-bottom: 6px;
     }
 
     &__name-item-wrapper {
@@ -352,13 +358,12 @@
 
     &__achievments-block {
       order: 4;
-      position: relative;
 
-      margin-bottom: 64px;
-
+      margin: 0;
+      margin-bottom: 52px;
       padding: 0;
-      padding-top: 53px;
-      padding-left: 40px;
+      padding-top: 39px;
+      padding-left: 52px;
       padding-bottom: 3px;
 
       text-align: left;
@@ -369,13 +374,9 @@
     }
 
     &__achievments-promo {
-      display: block;
-      position: absolute;
-      top: -15px;
-      left: 50%;
       width: 438px;
-
-      transform: translate(-50%);
+      padding: 0;
+      margin: 0;
 
       color: #d22856;
       font-size: 14px;
@@ -396,12 +397,11 @@
 
     &__contacts-block {
       order: 3;
-      position: relative;
 
       margin: 0;
-      margin-bottom: 66px;
+      margin-bottom: 50px;
       padding: 0;
-      padding-top: 46px;
+      padding-top: 32px;
       padding-left: 60px;
       padding-bottom: 0;
 
@@ -413,12 +413,7 @@
 
     &__contacts-header {
       display: block;
-      position: absolute;
-      top: -15px;
-      left: 50%;
       padding: 0 30px;
-
-      transform: translate(-50%);
 
       color: #d22856;
       font-size: 14px;
@@ -455,7 +450,7 @@
       order: 1;
       width: 467px;
       margin: 0;
-      margin-bottom: 10px;
+      margin-bottom: 11px;
     }
 
     &__contacts-input[type="tel"] {
@@ -469,12 +464,12 @@
 
     &__application-block {
       order: 2;
-      position: relative;
 
-      margin-bottom: 65px;
+      margin: 0;
+      margin-bottom: 52px;
       padding: 0;
       padding-left: 60px;
-      padding-top: 54px;
+      padding-top: 44px;
       padding-bottom: 19px;
 
       background-color: transparent;
@@ -483,15 +478,9 @@
     }
 
     &__application-promo {
-      position: absolute;
-      top: -9px;
-      left: 50%;
-      transform: translate(-50%);
-
-      width: 370px;
+      width: 367px;
+      padding: 0;
       margin: 0;
-
-      background-color: white;
     }
 
     &__application-title:before {
@@ -501,12 +490,11 @@
 
     &__review-block {
       order: 5;
-      position: relative;
 
+      margin: 0;
       margin-bottom: 67px;
-
       padding: 0;
-      padding-top: 45px;
+      padding-top: 30px;
       padding-bottom: 47px;
 
       text-align: center;
@@ -517,11 +505,6 @@
     }
 
     &__review-promo {
-      position: absolute;
-      top: -15px;
-      left: 50%;
-      transform: translate(-50%);
-
       padding: 0 38px;
       margin: 0;
 
@@ -555,7 +538,6 @@
 
 
 
-
 @media @desktop-widths {
   .user-form {
     flex-direction: row;
@@ -565,6 +547,7 @@
 
     .container;
     padding: 0;
+    margin-bottom: 67px;
 
 
     &__promo {
@@ -579,6 +562,7 @@
 
     &__name-block {
       padding: 0;
+      margin: 0;
       margin-top: 12px;
       width: 436px;
     }
@@ -590,14 +574,13 @@
 
     &__application-block {
       margin: 0;
-      margin-top: 5px;
       padding: 0;
-      padding-top: 56px;
-      padding-left: 75px;
-      padding-right: 20px;
-      padding-bottom: 15px;
+      padding-top: 26px;
+      padding-left: 64px;
+      padding-right: 0;
+      padding-bottom: 16px;
 
-      width: 335px;
+      width: 325px;
 
     }
 
@@ -607,19 +590,30 @@
       padding: 0;
     }
 
+    &__application-title::before {
+      margin-left: 13px;
+    }
+
 
     &__contacts-block {
-      display: flex;
-      justify-content: space-between;
-
-      width: 816px;
+      width: 100%;
       margin: 0;
-      margin-bottom: 64px;
+      margin-bottom: 50px;
       margin-top: 50px;
 
-      padding: 59px;
-      padding-top: 42px;
+      padding: 0 23px;
+      padding-top: 27px;
       padding-bottom: 13px;
+    }
+
+    &__contacts-items-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__contacts-item-wrapper {
+      margin: 0;
+      padding: 0;
     }
 
     &__contacts-item-wrapper:last-of-type {
@@ -637,7 +631,7 @@
     }
 
     &__contacts-input {
-      width: 340px;
+      width: 343px;
       margin: 0;
     }
 
@@ -646,7 +640,7 @@
     &__achievments-block {
       width: auto;
       margin: 0;
-      margin-bottom: 65px;
+      margin-bottom: 51px;
 
       padding-right: 0;
       padding-bottom: 12px;
@@ -697,10 +691,9 @@
 
 
     &__review-block {
-      width: 816px;
-      padding-top: 42px;
+      padding-top: 28px;
       padding-left: 58px;
-      padding-right: 62px;
+      padding-right: 58px;
       padding-bottom: 39px;
 
       margin-bottom: 65px;
@@ -725,6 +718,8 @@
       width: auto;
       text-align: right;
       padding: 20px 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
 
     &__warning-hidden {
