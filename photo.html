@@ -30,7 +30,18 @@
       <p class="photo-blog-wrapper__header">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <article class="post-main">
         <div class="post-main__image-wrapper">
-          <img class="post-main__image">
+          <picture>
+            <source media="(min-width:1200px)"
+                    srcset="../img/panorama-desktop.jpg 1x,
+                            ../img/panorama-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 700px)"
+                    srcset="../img/panorama-tablet.jpg 1x,
+                            ../img/panorama-tablet@2x.jpg 2x">
+
+            <img class="post-main__image" src="../img/panorama-mobile.jpg"
+                                          srcset="../img/panorama-mobile@2x.jpg 2x">
+          </picture>
         </div>
         <div class="post-main__promo">панорама дня</div>
         <div class="post-main__message">
@@ -44,7 +55,18 @@
       </article>
       <article class="user-post">
         <div class="user-post__image-wrapper">
-          <img class="user-post__image user-post__image--1">
+          <picture>
+            <source media="(min-width: 1200px)"
+                    srcset="img/photo-1-desktop.jpg 1x,
+                            img/photo-1-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 700px)"
+                    srcset="img/photo-1-tablet.jpg 1x,
+                            img/photo-1-tablet@2x.jpg 2x">
+
+            <img class="post-main__image" src="img/photo-1-mobile.jpg"
+                                          srcset="img/photo-1-mobile@2x.jpg 2x">
+          </picture>
         </div>
         <div class="user-message">
           <div class="user-message__user-info">
@@ -57,7 +79,18 @@
       </article>
       <article class="user-post">
         <div class="user-post__image-wrapper">
-          <img class="user-post__image user-post__image--2">
+          <picture>
+            <source media="(min-width: 1200px)"
+                    srcset="img/photo-2-desktop.jpg 1x,
+                            img/photo-2-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 700px)"
+                    srcset="img/photo-2-tablet.jpg 1x,
+                            img/photo-2-tablet@2x.jpg 2x">
+
+            <img class="post-main__image" src="img/photo-2-mobile.jpg"
+                                          srcset="img/photo-2-mobile@2x.jpg 2x">
+          </picture>
         </div>
         <div class="user-message">
           <div class="user-message__user-info">
@@ -70,7 +103,18 @@
       </article>
       <article class="user-post">
         <div class="user-post__image-wrapper">
-          <img class="user-post__image user-post__image--3">
+          <picture>
+            <source media="(min-width: 1200px)"
+                    srcset="img/photo-3-desktop.jpg 1x,
+                            img/photo-3-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 700px)"
+                    srcset="img/photo-3-tablet.jpg 1x,
+                            img/photo-3-tablet@2x.jpg 2x">
+
+            <img class="post-main__image" src="img/photo-3-mobile.jpg"
+                                          srcset="img/photo-3-mobile@2x.jpg 2x">
+          </picture>
         </div>
         <div class="user-message">
           <div class="user-message__user-info">
@@ -83,7 +127,18 @@
       </article>
       <article class="user-post">
         <div class="user-post__image-wrapper">
-          <img class="user-post__image user-post__image--4">
+          <picture>
+            <source media="(min-width: 1200px)"
+                    srcset="img/photo-4-desktop.jpg 1x,
+                            img/photo-4-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 700px)"
+                    srcset="img/photo-4-tablet.jpg 1x,
+                            img/photo-4-tablet@2x.jpg 2x">
+
+            <img class="post-main__image" src="img/photo-4-mobile.jpg"
+                                          srcset="img/photo-4-mobile@2x.jpg 2x">
+          </picture>
         </div>
         <div class="user-message">
           <div class="user-message__user-info">
@@ -96,7 +151,18 @@
       </article>
       <article class="user-post">
         <div class="user-post__image-wrapper">
-          <img class="user-post__image user-post__image--5">
+          <picture>
+            <source media="(min-width: 1200px)"
+                    srcset="img/photo-5-desktop.jpg 1x,
+                            img/photo-5-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 700px)"
+                    srcset="img/photo-5-tablet.jpg 1x,
+                            img/photo-5-tablet@2x.jpg 2x">
+
+            <img class="post-main__image" src="img/photo-5-mobile.jpg"
+                                          srcset="img/photo-5-mobile@2x.jpg 2x">
+          </picture>
         </div>
         <div class="user-message">
           <div class="user-message__user-info">
@@ -109,7 +175,18 @@
       </article>
       <article class="user-post">
         <div class="user-post__image-wrapper">
-          <img class="user-post__image user-post__image--6">
+          <picture>
+            <source media="(min-width: 1200px)"
+                    srcset="img/photo-6-desktop.jpg 1x,
+                            img/photo-6-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 700px)"
+                    srcset="img/photo-6-tablet.jpg 1x,
+                            img/photo-6-tablet@2x.jpg 2x">
+
+            <img class="post-main__image" src="img/photo-6-mobile.jpg"
+                                          srcset="img/photo-6-mobile@2x.jpg 2x">
+          </picture>
         </div>
         <div class="user-message">
           <div class="user-message__user-info">
@@ -124,7 +201,18 @@
     </section>
     <form class="photo-form">
       <div class="photo-form__photo-wrapper">
-        <img class="photo-form__photo">
+        <picture>
+          <source media="(min-width: 1200px)"
+                  srcset="img/photo-7-desktop.jpg 1x,
+                          img/photo-7-desktop@2x.jpg 2x">
+
+          <source media="(min-width: 700px)"
+                  srcset="img/photo-7-tablet.jpg 1x,
+                          img/photo-7-tablet@2x.jpg 2x">
+
+          <img class="post-main__image" src="img/photo-7-mobile.jpg"
+                                        srcset="img/photo-7-mobile@2x.jpg 2x">
+        </picture>
       </div>
       <div class="photo-form__settings-block">
         <input type="radio" name="photo-setting" id="photo-setting1" value="photo-setting1" class="photo-form__settings-input">

@@ -29,6 +29,12 @@
     padding-bottom: 286px;
 
     background: url(../img/iphone-screen-mobile.png) 50% 110% no-repeat #f2f2f2;
+    background-size: 157px auto;
+
+    @media (min-resolution: 144dpi),
+           (min-resolution: 1.5dppx) {
+             background-image: url(../img/iphone-screen-mobile@2x.png);
+           }
   }
 
   &__description::before {
@@ -126,7 +132,13 @@
       left: 40px;
       z-index: 10;
 
-      background: url(../img/iphone-screen-tablet.png) 0 20px no-repeat;
+      background: url(../img/iphone-screen-tablet-3@1x.png) 0 20px no-repeat;
+      background-size: 268px auto;
+
+      @media (min-resolution: 144dpi),
+             (min-resolution: 1.5dppx) {
+               background-image: url(../img/iphone-screen-tablet-3@2x.png);
+             }
     }
 
     &__thesis-wrapper {
@@ -209,7 +221,7 @@
       margin: 0 auto;
       margin-bottom: 169px;
       padding: 0;
-      padding-top: 18px;
+      padding-top: 68px;
     }
 
     &__header-text {
@@ -262,19 +274,37 @@
       height: 355px;
       width: 300px;
 
-      top: -149px;
-      left: -30px;
+      top: -95px;
+      left: -26px;
       z-index: 15;
 
-      background: url(../img/science-shadow-tablet.png) 0 102% no-repeat, url(../img/iphone-science-1-tablet.png) 50% 54px no-repeat;
+      background: url(../img/iphone-screen-desktop-1@1x.png) no-repeat;
+      background-size: 292px auto;
+
+      @media (min-resolution: 144dpi),
+             (min-resolution: 1.5dppx) {
+               background-image: url(../img/iphone-screen-desktop-1@2x.png);
+             }
     }
 
     &__thesis-wrapper:nth-of-type(2)::before {
-      background: url(../img/science-shadow-tablet.png) 0 102% no-repeat, url(../img/iphone-science-2-tablet.png)  50% 54px no-repeat;
+      background: url(../img/iphone-screen-desktop-2@1x.png) 3px 0 no-repeat;
+      background-size: 292px auto;
+
+      @media (min-resolution: 144dpi),
+             (min-resolution: 1.5dppx) {
+               background-image: url(../img/iphone-screen-desktop-2@2x.png);
+             }
     }
 
     &__thesis-wrapper:nth-of-type(3)::before {
-      background: url(../img/science-shadow-tablet.png) 0 102% no-repeat, url(../img/iphone-science-3-tablet.png)  50% 54px no-repeat;
+      background: url(../img/iphone-screen-desktop-3@1x.png) 4px 0 no-repeat;
+      background-size: 292px auto;
+
+      @media (min-resolution: 144dpi),
+             (min-resolution: 1.5dppx) {
+               background-image: url(../img/iphone-screen-desktop-3@2x.png);
+             }
     }
 
     &__thesis-header {
