@@ -93,9 +93,29 @@
     cursor: pointer;
   }
 
+  &__btn:hover {
+    color: white;
+    background-color: #d22856;
+  }
+
+  &__btn:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &__btn--cancel {
     color: #e3e4e4;
     border-color: #dddfe0;
+  }
+
+  &__btn--cancel:hover {
+    color: #b5b9be;
+    border-color: #b5b9be;
+    background-color: transparent;
+  }
+
+  &__btn--cancel:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #b5b9be;
   }
 }
 

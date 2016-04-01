@@ -66,7 +66,6 @@
   background: white;
 }
 
-
 .text-logo {
   position: absolute;
   display: block;
@@ -160,8 +159,6 @@
 }
 
 
-
-
 @media @tablet-widths {
   .page-header {
     width: 700px;
@@ -226,6 +223,23 @@
   }
 }
 
+
+@media @mobile-and-tablet-widths {
+  .main-menu__ref:hover {
+    color: #d22856;
+  }
+
+  .main-menu__ref:active {
+    color: #6c3148;
+  }
+
+  .main-menu__ref--current:hover,
+  .main-menu__ref--current:active {
+    color: white;
+  }
+}
+
+
 @media @desktop-widths {
   .page-header {
     width: 1200px;
@@ -272,25 +286,52 @@
     display: block;
     position: static;
     float: right;
-    max-width: 700px;
-    margin-right: 100px;
+    max-width: 730px;
+    margin-right: 60px;
 
 
     &__item {
       display: inline-block;
-      vertical-align: middle;
-      width: 170px;
+      margin: 0;
+      padding: 0;
+      vertical-align: top;
     }
 
     &__ref {
-      line-height: 110px;
-      padding: 0;
+      position: relative;
+      padding: 46px 39px;
+      margin: 0;
 
       font-size: 18px;
       text-transform: capitalize;
       font-weight: normal;
-      background-color: inherit;
+      line-height: 1em;
+
+      background-color: transparent;
       border: none;
+    }
+
+    &__ref--current::after,
+    &__ref:hover::after {
+      content: '';
+
+      position: absolute;
+      bottom: 30px;
+      right: 39px;
+      left: 39px;
+
+      display: block;
+      height: 2px;
+
+      background: white;
+    }
+
+    &__ref:active {
+      opacity: 0.3;
+    }
+
+    &__ref:active::after {
+      display: none;
     }
 
     &__ref--close {
