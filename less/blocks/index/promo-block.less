@@ -160,8 +160,10 @@
     &__science-block {
       .clearfix;
       display: block;
+      padding-bottom: 20px;
+      margin-bottom: -20px;
 
-      background: url(../img/24-hours-tablet.png) no-repeat 40px 145%;
+      background: url(../img/24-hours-tablet.png) no-repeat 40px 58px;
     }
 
     &__science-block-wrapper {
@@ -207,9 +209,18 @@
     &__science-ref {
       display: block;
       color: #dd5d80;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }
+
 
 @media @desktop-widths {
   .promo-block {

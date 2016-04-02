@@ -11,46 +11,42 @@
   }
 
   &__developer-info {
+    display: block;
     width: 130px;
+    height: 51px;
     margin: 0 auto;
     margin-bottom: 40px;
 
     color: #283645;
-    line-height: 51px;
     text-align: left;
+    text-decoration: none;    
+
+    cursor: pointer;
+
+
+    & svg {
+      margin-top: 10px;
+
+      fill: #d22856;
+    }
+
+    &:hover svg {
+      fill: #283645;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
   }
 
-  &__developer-ref {
+  &__developer-text {
     display: inline-block;
-    vertical-align: middle;
-    width: 27px;
-    height: 34px;
-    margin-left: 14px;
-
-    font-size: 0;
-    line-height: 0;
-    text-decoration: none;
-
-    background: url("../img/logo-htmlacademy.svg") 50% 50% no-repeat;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-right: 10px;
   }
 }
 
-
-.glasses-logo {
-  margin-bottom: 35px;
-}
-
-.glasses-logo__ref {
-  display: block;
-  width: 150px;
-  height: 50px;
-  margin: 0 auto;
-
-  font-size: 0;
-  background-image: url("../img/logo-pink-blue-mobile.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
 
 .social-block {
   margin: 0 auto;
@@ -70,6 +66,21 @@
   border: 3px solid #e9ebec;
   border-radius: 50%;
 
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--facebook {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+  }
+
 
   &:hover {
     border-color: #283645;
@@ -77,18 +88,6 @@
 
   &:active {
     opacity: 0.15;
-  }
-
-  &--twitter {
-    background: url("../img/icon-twitter.svg") 50% 50% no-repeat;
-  }
-
-  &--facebook {
-    background: url("../img/icon-facebook.svg") 50% 50% no-repeat;
-  }
-
-  &--youtube {
-    background: url("../img/icon-youtube.svg") 50% 50% no-repeat;
   }
 }
 
@@ -116,11 +115,6 @@
     }
   }
 
-  .glasses-logo {
-    float: left;
-    width: 150px;
-  }
-
   .social-block {
     display: inline-block;
     vertical-align: top;
@@ -139,10 +133,6 @@
 
       font-size: 18px;
     }
-  }
-
-  .glasses-logo__ref {
-    background-image: url("../img/logotype-blue-desktop.png");
   }
 
   .social-block {

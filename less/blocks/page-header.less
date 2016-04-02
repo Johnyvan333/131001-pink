@@ -69,46 +69,26 @@
 .top-panel__toogle {
   float: right;
   width: 50px;
-  margin-right: 20px;
+  height: 25px;
+  margin-right: 19px;
   margin-top: 21px;
 
   cursor: pointer;
 
+  font-size: 0;
   text-align: center;
-}
 
-.top-panel__toogle::before,
-.top-panel__toogle::after {
-  content: '';
-}
+  & svg {
+    fill: white;
+  }
 
-.top-panel__toogle-icon,
-.top-panel__toogle::before,
-.top-panel__toogle::after {
-  display: block;
-  height: 4px;
-  width: 50px;
-  margin-bottom: 6px;
-  font-size: 0;
-  line-height: 0;
+  &:hover svg {
+    fill: #d22856;
+  }
 
-  background: white;
-}
-
-.text-logo {
-  position: absolute;
-  display: block;
-  left: 18px;
-  top: 18px;
-
-  width: 80px;
-  height: 30px;
-  z-index: 5;
-
-  font-size: 0;
-  background-image: url("../img/logo-pink-white-mobile.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .main-menu {
@@ -156,31 +136,24 @@
   display: block;
   position: relative;
 
-  width: 30px;
-  height: 30px;
-  margin-right: 25px;
-  margin-top: -5px;
+  width: 24px;
+  height: 24px;
+  margin-right: 28px;
+  margin-top: -2px;
 
   cursor: pointer;
-}
 
-.main-menu__close-icon::after,
-.main-menu__close-icon::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 12px;
+  & svg {
+    fill: white;
+  }
 
-  height: 30px;
-  width: 4px;
+  &:hover svg {
+    fill: #d22856;
+  }
 
-  background: white;
-
-  transform: rotate(45deg);
-}
-
-.main-menu__close-icon::before {
-  transform: rotate(-45deg);
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .main-menu--open {
@@ -253,20 +226,10 @@
   }
 
   .top-panel__toogle {
-    margin-top: 45px;
+    margin-top: 44px;
     margin-right: 40px;
   }
 
-
-  .text-logo {
-    top: 25px;
-    left: 40px;
-
-    width: 150px;
-    height: 45px;
-
-    background-image: url("../img/logotype-white-tablet.png");
-  }
 
   .main-menu__ref--close {
     height: 80px;
@@ -274,8 +237,8 @@
   }
 
   .main-menu__close-icon {
-    margin-top: 20px;
-    margin-right: 40px;
+    margin-top: 23px;
+    margin-right: 43px;
   }
 }
 
@@ -346,12 +309,6 @@
     &__info--photo {
       width: 500px;
     }
-  }
-
-  .text-logo {
-    left: 130px;
-
-    background-image: url("../img/logotype-white-desktop.png");
   }
 
   .top-panel__toogle {
