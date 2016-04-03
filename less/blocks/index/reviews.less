@@ -105,10 +105,10 @@
 @media @desktop-widths {
   .reviews {
     position: relative;
-    padding-top: 167px;
+    padding-top: 187px;
     padding-bottom: 120px;
 
-    background: url(../img/quotes.png) 50% 17% no-repeat;
+    background: url(../img/icon-quotes.svg) 50% 93px no-repeat;
 
     &__item {
       position: relative;
@@ -148,16 +148,28 @@
 
     &__toogle-prev {
       left: 135px;
-      top: 217px;
+      top: 237px;
 
       transform: rotate(135deg);
     }
 
     &__toogle-next {
       right: 135px;
-      top: 217px;
+      top: 237px;
 
       transform: rotate(-45deg);
+    }
+
+    &__toogle:hover {
+      border-color: #7e868f;
+      border-left-color: transparent;
+      border-top-color: transparent;
+    }
+
+    &__toogle:active {
+      border-color: #e9ebec;
+      border-left-color: transparent;
+      border-top-color: transparent;
     }
   }
 

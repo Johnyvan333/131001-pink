@@ -49,6 +49,15 @@
     outline: none;
   }
 
+  &__name-input:hover {
+    border-color: #283645;
+  }
+
+  &__name-input:focus {
+    border-color: #d22856;
+  }
+
+
   &__name-item-wrapper:nth-of-type(2) {
     margin-bottom: 3px;
   }
@@ -97,6 +106,8 @@
     color: #283645;
     font-size: 18px;
     line-height: 39px;
+
+    cursor: pointer;
   }
 
   &__achievments-title::before {
@@ -114,8 +125,17 @@
   }
 
   &__achievments-input:checked + &__achievments-title::before {
-    background: url(../img/form-tick-icon.png) 50% 50% no-repeat white;
+    background: url(../img/icon-yes.svg) 50% 50% no-repeat;
   }
+
+  &__achievments-title:hover::before {
+    border-color: #283645;
+  }
+
+  &__achievments-title:active::before {
+    border-color: #d22856;
+  }
+
 
 
   &__contacts-block {
@@ -157,6 +177,14 @@
 
     border: 2px solid #e5e5e5;
     outline: none;
+  }
+
+  &__contacts-input:hover {
+    border-color: #283645;
+  }
+
+  &__contacts-input:focus {
+    border-color: #d22856;
   }
 
   &__contacts-input::placeholder {
@@ -201,6 +229,8 @@
     color: #283645;
     font-size: 18px;
     line-height: 39px;
+
+    cursor: pointer;
   }
 
   &__application-title::before {
@@ -227,6 +257,22 @@
     background-color: #d22856;
     border: 10px solid white;
     box-shadow: 0 0 0 2px #e5e5e5;
+  }
+
+  &__application-title:hover::before {
+    box-shadow: 0 0 0 2px #283645;
+  }
+
+  &__application-title:active::before {
+    box-shadow: 0 0 0 2px #d22856;
+  }
+
+  &__application-input:checked + &__application-title:hover::before {
+    box-shadow: 0 0 0 2px #283645;
+  }
+
+  &__application-input:checked + &__application-title:hover::before {
+    box-shadow: 0 0 0 2px #d22856;
   }
 
 
@@ -288,7 +334,37 @@
     border: none;
     outline: none;
     border-radius: 3px;
+
+    cursor: pointer;
   }
+
+  &__submit:visited {
+    animation-name: change-color;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  &__submit:hover {
+    background-color: #1c9b5e;
+  }
+
+  &__submit:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__submit:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5;
+  }
+
+  @keyframes change-color {
+    0 { color: rgba(255, 255, 255, 0.3); };
+    33% { color: rgba(255, 255, 255, 0.7); };
+    66% { color: rgba(255, 255, 255, 0.3); };
+    100% { color: rgba(255, 255, 255, 0.7); };
+  }
+
 
   &__warning {
     margin-bottom: 50px;
@@ -454,11 +530,11 @@
     }
 
     &__contacts-input[type="tel"] {
-      background: url(../img/icon-phone.png) 95% 50% no-repeat;
+      background: url(../img/icon-phone.svg) 95% 50% no-repeat;
     }
 
     &__contacts-input[type="email"] {
-      background: url(../img/icon-mail.png) 95% 50% no-repeat;
+      background: url(../img/icon-mail.svg) 95% 50% no-repeat;
     }
 
 

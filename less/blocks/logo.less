@@ -1,0 +1,169 @@
+.header-logo {
+  position: absolute;
+  display: block;
+  left: -51px;
+  top: 5px;
+  z-index: 5;
+
+
+  &__text-container {
+    fill: white;
+  }
+
+  &__star-glasses-container,
+  &__simple-glasses-container {
+    display: none;
+  }
+
+  &__star-container {
+    display: none;
+  }
+
+  &:hover g {
+    fill: #d22856;
+  }
+
+  &:active g {
+    opacity: 0.3;
+  }
+
+  &:active &__text-container {
+    fill: white;
+  }
+}
+
+
+
+.footer-logo {
+  display: block;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-top: 5px;
+
+
+  &__text-container {
+    fill: #283645;
+  }
+
+  &__star-glasses-container {
+    display: none;
+  }
+
+  &__simple-glasses-container {
+    fill: #d22856;
+  }
+
+  &__star-container {
+    display: none;
+  }
+
+  &:hover g {
+    fill: #d22856;
+  }
+
+  &:active g {
+    opacity: 0.3;
+  }
+
+  &:active &__text-container {
+    fill: #283645;
+  }  
+}
+
+
+@media @tablet-widths {
+  .header-logo {
+    top: 26px;
+    left: 42px;
+
+
+    &__text-container {
+      fill: white;
+    }
+
+    &__simple-glasses-container {
+      display: inline;
+
+      fill: white;
+    }
+
+    &__star-container {
+      display: none;
+    }
+
+    &:active &__simple-glasses-container {
+      fill: white;
+    }
+  }
+
+
+  .footer-logo {
+    float: left;
+  }
+}
+
+
+@media @desktop-widths {
+  .header-logo {
+    left: 130px;
+
+
+    &__simple-glasses-container {
+      display: none;
+    }
+
+    &__star-glasses-container {
+      display: inline;
+
+      fill: white;
+    }
+
+    &__star-container {
+      display: inline;
+
+      fill: #d22856;
+    }
+
+    &:active &__star-container {
+      display: inline;
+
+      fill: #d22856;
+    }
+
+    &:active &__star-glasses-container {
+      display: inline;
+
+      fill: white;
+    }
+  }
+
+  .footer-logo {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 5px;
+
+
+    &__simple-glasses-container {
+      display: none;
+    }
+
+    &__star-glasses-container {
+      display: inline;
+
+      fill: #d22856;
+    }
+
+    &__star-container {
+      display: inline;
+
+      fill: #283645;
+
+      &--pink {
+        fill: #d22856;
+      }
+    }
+  }
+}
