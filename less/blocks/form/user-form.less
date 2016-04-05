@@ -136,6 +136,18 @@
     border-color: #d22856;
   }
 
+  &__achievments-input:disabled + &__achievments-title::before,
+  &__achievments-input:disabled + &__achievments-title:hover::before,
+  &__achievments-input:disabled + &__achievments-title:active::before {
+    border-color: #283645;
+    opacity: 0.5;
+  }
+
+  &__achievments-input:disabled + &__achievments-title,
+  &__achievments-input:disabled + &__achievments-title,
+  &__achievments-input:disabled + &__achievments-title {
+    opacity: 0.5;
+  }
 
 
   &__contacts-block {
@@ -273,6 +285,20 @@
 
   &__application-input:checked + &__application-title:hover::before {
     box-shadow: 0 0 0 2px #d22856;
+  }
+
+
+  &__application-input:disabled + &__application-title::before,
+  &__application-input:disabled + &__application-title:hover::before,
+  &__achievments-input:disabled + &__application-title:active::before {
+    box-shadow: 0 0 0 2px #283645;
+    opacity: 0.5;
+  }
+
+  &__application-input:disabled + &__application-title,
+  &__application-input:disabled + &__application-title,
+  &__application-input:disabled + &__application-title {
+    opacity: 0.5;
   }
 
 
