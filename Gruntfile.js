@@ -89,7 +89,7 @@ module.exports = function(grunt) {
           src: ["build/img/**/*.svg"]
         }]
       }
-    }
+    },
 
     browserSync: {
       server: {
