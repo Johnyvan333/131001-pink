@@ -28,6 +28,14 @@ module.exports = function(grunt) {
           src: ["*.html"],
           dest: "build"
         }]
+      },
+
+      js: {
+        files: [{
+          expand: true,
+          src: ["js/*.js"],
+          dest: "build/js"
+        }]
       }
     },
 
@@ -113,6 +121,11 @@ module.exports = function(grunt) {
       html: {
         files: ["*.html"],
         tasks: ["copy:html"],
+        options: {spawn: false}
+      },
+      js: {
+        files: ["js/*.js"],
+        tasks: ["copy:js"],
         options: {spawn: false}
       },
       style: {

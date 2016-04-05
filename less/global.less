@@ -1,7 +1,7 @@
-@mobile-widths-only: ~"(max-width: 699px)";
-@tablet-widths: ~"(min-width: 700px)";
-@mobile-and-tablet-widths: ~"(max-width: 1199px)";
-@desktop-widths: ~"(min-width: 1200px)";
+@mobile-widths-only: ~"(max-width: 659px)";
+@tablet-widths: ~"(min-width: 660px)";
+@mobile-and-tablet-widths: ~"(max-width: 959px)";
+@desktop-widths: ~"(min-width: 960px)";
 
 .clearfix {
   &::after {
@@ -25,16 +25,20 @@
 }
 
 body {
+  width: 320px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   background: white;
-}
 
-img {
-  max-width: 100%;
-  height: auto;
+  @media @tablet-widths {
+    width: 700px;
+  }
+
+  @media @desktop-widths {
+    width: 1200px;
+  }
 }
