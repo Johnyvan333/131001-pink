@@ -5,7 +5,8 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     clean: {
-      build: ["build"]
+      build: ["build"],
+        css: ["build/css/style.not-resorted.css"]
     },
 
     copy: {
@@ -33,8 +34,8 @@ module.exports = function(grunt) {
       js: {
         files: [{
           expand: true,
-          src: ["js/*.js"],
-          dest: "build/js"
+          src: ["js/**"],
+          dest: "build"
         }]
       }
     },
@@ -42,7 +43,7 @@ module.exports = function(grunt) {
     less: {
       style: {
         files: {
-          "build/css/style.css": ["less/style.less"]
+          "build/css/style.not-resorted.css": ["less/style.less"]
         }
       }
     },
@@ -65,6 +66,17 @@ module.exports = function(grunt) {
       style: {
         src: "build/css/*.css"
       }
+    },
+
+    csscomb: {
+        style: {
+          options: {
+             config: "csscomb.json",
+          },
+          files: {
+            "build/css/style.css": ["build/css/style.not-resorted.css"],
+          }
+       },
     },
 
     csso: {
@@ -104,7 +116,7 @@ module.exports = function(grunt) {
         bsFiles: {
           src: [
             "*.html",
-            "css/*.css"
+            "css/*.css",
           ]
         },
         options: {
@@ -130,7 +142,7 @@ module.exports = function(grunt) {
       },
       style: {
         files: ["less/**/*.less"],
-        tasks: ["less", "postcss", "csso"],
+        tasks: ["less", "postcss", "csscomb", "clean:css", "csso"],
         options: {spawn: false}
       }
     }
@@ -140,8 +152,10 @@ module.exports = function(grunt) {
   grunt.registerTask("build", [
     "clean",
     "copy",
-    "less",
+    "less",    
     "postcss",
+    "csscomb",
+    "clean:css",
     "csso",
     "svgmin",
     "imagemin"

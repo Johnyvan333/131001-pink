@@ -31,10 +31,10 @@
     background: url(../img/iphone-screen-mobile.png) 50% 110% no-repeat #f2f2f2;
     background-size: 157px auto;
 
-    @media (min-resolution: 144dpi),
-           (min-resolution: 1.5dppx) {
+    @media @mobile-widths-only and (min-resolution: 144dpi),
+           @mobile-widths-only and (min-resolution: 1.5dppx) {
              background-image: url(../img/iphone-screen-mobile@2x.png);
-           }
+    }
   }
 
   &__description::before {
@@ -115,6 +115,11 @@
       text-align: right;
 
       background-image: none;
+
+      @media (min-resolution: 144dpi),
+             (min-resolution: 1.5dppx) {
+               background-image: none;
+      }
     }
 
     &__description::before {
@@ -128,7 +133,7 @@
       height: 500px;
       width: 300px;
 
-      top: -69px;
+      bottom:0;
       left: 40px;
       z-index: 10;
 

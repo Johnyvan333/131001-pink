@@ -1,0 +1,147 @@
+.modal-success {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1640px;
+  z-index: 50;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+
+  background: white;
+  box-shadow: 0 12px 12px -8px #ccc,
+              0 -5px 15px -8px #ccc;
+
+
+  &__info-wrapper {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  &__header {
+    display: block;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 28px;
+
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__info {
+    padding: 0 27px;
+    padding-bottom: 30px;
+
+    color: #283645;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+
+    background: white;
+  }
+
+  &__info-break {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  &__btn-wrapper {
+    margin: 0 auto;
+    padding-top: 42px;
+    padding-bottom: 52px;
+
+    text-align: center;
+
+    background: #f2f2f2;
+  }
+
+  &__btn {
+    width: 280px;
+    padding: 17px 0;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+
+    background: #2aab6d;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  &__btn:hover {
+    background: #1c9b5e;
+  }
+
+  &__btn:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+
+@media @tablet-widths {
+  .modal-success {
+    top: 1375px;
+    width: 460px;
+
+    box-shadow: 0 12px 12px -2px #ddd,
+                0 0px 12px 0px #ddd;
+
+
+    &__header {
+      width: 205px;
+      margin: 0 auto;
+
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    &__info {
+      width: 310px;
+      margin: 0 auto;
+      padding-bottom: 35px;
+
+      font-size: 18px;
+    }
+
+    &__info-break {
+      display: inline;
+    }
+
+    &__btn {
+      width: 300px;
+    }
+  }
+}
+
+
+@media @desktop-widths {
+  .modal-success {
+    top: 1250px;
+    width: 780px;
+
+    &__header {
+      width: 400px;
+    }
+
+    &__info {
+      width: 380px;
+    }
+
+    &__btn {
+      width: 460px;
+    }
+  }
+}
