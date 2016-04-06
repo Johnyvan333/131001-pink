@@ -16,6 +16,7 @@
     "autoprefixer": "^6.3.6",
     "browser-sync": "^2.11.2",
     "css-mqpacker": "^4.0.1",
+    "editorconfig-tools": "^0.1.1",
     "grunt": "^0.4.5",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-clean": "^1.0.0",
